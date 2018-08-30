@@ -27,7 +27,6 @@ workspace 1 gaps outer $largestspace_outer_width
 # gaps toggler
 mode "gaps_mode" {
   bindsym 0 exec "i3-msg gaps inner current set 0 && i3-msg gaps outer current set 0"
-  bindsym g exec "i3-msg gaps inner current set 0 && i3-msg gaps outer current set 0"
   bindsym h exec "i3-msg gaps inner current set $compact_inner_width && i3-msg gaps outer current set $compact_outer_width"
   bindsym j exec "i3-msg gaps inner current set $default_inner_width && i3-msg gaps outer current set $default_outer_width"
   bindsym k exec "i3-msg gaps inner current set $largespace_inner_width  && i3-msg gaps outer current set $largespace_outer_width"
