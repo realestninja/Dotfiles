@@ -59,7 +59,7 @@ bindsym $mod+n mode "gaps_mode"
 exec --no-startup-id ~/.config/polybar/launch.sh
 
 # compton
-exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
+exec --no-startup-id "compton -b --config ~/.config/compton.conf"
 
 # set workspace-background
 exec sh ~/.fehbg
