@@ -1,0 +1,11 @@
+# system/power menu
+mode "system_power_mode" {
+  bindsym s exec systemctl poweroff
+  bindsym r exec systemctl reboot
+  bindsym e exec i3-msg exit
+
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+Delete mode "system_power_mode"
+

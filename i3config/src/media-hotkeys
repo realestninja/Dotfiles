@@ -1,0 +1,10 @@
+# media keys / volume control etc.
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 10%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 10%-"
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # 'pactl list sinks' to get sink number
+
+# change brightness
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86MonBrightnessDown exec "light -U 5"
+# using https://github.com/haikarainen/light.git
+

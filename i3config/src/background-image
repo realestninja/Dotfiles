@@ -1,0 +1,3 @@
+# set workspace-background
+exec sh ~/.fehbg
+

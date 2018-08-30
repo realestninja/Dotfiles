@@ -1,0 +1,233 @@
+# i3 config file (v4)
+#
+# Please see http://i3wm.org/docs/userguide.html for a complete reference!
+#
+
+set $mod Mod1
+
+# set font
+# font pango:Terminus 12px
+# font pango: M+ 14px
+font pango:DejaVu Sans Mono 15
+
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below. ISO 10646 = Unicode
+font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
+# The font above is very space-efficient, that is, it looks good, sharp and
+# clear in small sizes. However, if you need a lot of unicode glyphs or
+# right-to-left text rendering, you should instead use pango for rendering and
+# chose a FreeType font, such as:
+# font pango:DejaVu Sans Mono 10
+
+# i3-gaps settings
+
+# default gaps
+set $default_inner_width 14
+set $default_outer_width 22
+
+# compact gaps
+set $compact_inner_width 4
+set $compact_outer_width 0
+
+# large space
+set $largespace_inner_width 30
+set $largespace_outer_width 150
+
+for_window [class="^.*"] border pixel 0
+
+gaps inner $default_inner_width
+gaps outer $default_outer_width
+
+workspace 1 gaps inner $largespace_inner_width
+workspace 1 gaps outer $largespace_outer_width
+
+# gaps toggler
+mode "gaps_mode" {
+  bindsym 0 exec "i3-msg gaps inner current set 0 && i3-msg gaps outer current set 0"
+  bindsym h exec "i3-msg gaps inner current set 0 && i3-msg gaps outer current set 0"
+  bindsym j exec "i3-msg gaps inner current set $compact_inner_width && i3-msg gaps outer current set $compact_outer_width"
+  bindsym k exec "i3-msg gaps inner current set $default_inner_width && i3-msg gaps outer current set $default_outer_width"
+  bindsym l exec "i3-msg gaps inner current set $largespace_inner_width  && i3-msg gaps outer current set $largespace_outer_width"
+
+  bindsym q mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+n mode "gaps_mode"
+
+# polybar
+exec --no-startup-id ~/.config/polybar/launch.sh
+
+# compton
+exec --no-startup-id "compton -b --config ~/.config/compton/compton.conf"
+
+# set workspace-background
+exec sh ~/.fehbg
+
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# start a terminal
+bindsym $mod+Return exec i3-sensible-terminal
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+# start dmenu (a program launcher)
+bindsym $mod+d exec dmenu_run
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# split in horizontal orientation
+bindsym $mod+b split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# split toggle 
+bindsym $mod+t split toggle
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+space focus mode_toggle
+
+# focus the parent container
+bindsym $mod+a focus parent
+
+# focus the child container
+bindsym $mod+Shift+a focus child
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# resize window 
+mode "resize" {
+        bindsym h resize shrink width 5 px or 5 ppt
+        bindsym k resize grow height 5 px or 5 ppt
+        bindsym j resize shrink height 5 px or 5 ppt
+        bindsym l resize grow width 5 px or 5 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"
+
+# create new config file before reload/restart
+# reload the configuration file
+bindsym $mod+Shift+c exec create_i3_config && exec i3-msg reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r exec create_i3_config && exec i3-msg restart
+
+# place mouse in bottom right corner after booting + keybind for anytime. requires xdotool
+exec xdotool mousemove 3000 3000
+bindsym $mod+m exec xdotool mousemove 3000 3000
+
+# inverted scrolling for thinkpad touchpad
+exec --no-startup-id xinput --set-prop 11 "Synaptics Scrolling Distance" -111 -111
+exec --no-startup-id xinput --set-prop 11 "Synaptics Two-Finger Scrolling" 1 1
+
+# take screenshot
+bindsym $mod+F12 exec "scrot 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Fullscreen'"
+
+# take screenshot of current window
+bindsym $mod+F11 exec "scrot -u 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Current Window'"
+
+# media keys / volume control etc.
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 10%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 10%-"
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # 'pactl list sinks' to get sink number
+
+# change brightness
+bindsym XF86MonBrightnessUp exec "light -A 5"
+bindsym XF86MonBrightnessDown exec "light -U 5"
+# using https://github.com/haikarainen/light.git
+
+# play/pause spotify
+
+#set $playpause exec spotifycli --playpause
+set $playpause exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
+
+#set $playnext exec spotifycli --next
+set $playnext exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous
+
+#set $playprev exec spotifycli --prev
+set $playprev exec dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next
+
+bindsym $mod+p $playpause
+bindsym $mod+o $playnext
+bindsym $mod+i $playprev
+
+# system/power menu
+mode "system_power_mode" {
+  bindsym s exec systemctl poweroff
+  bindsym r exec systemctl reboot
+  bindsym e exec i3-msg exit
+
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+Shift+Delete mode "system_power_mode"
+
+set $nautilus nautilus --no-desktop
+set $chrome "google-chrome --force-device-scale-factor=1.4 %U"
+set $telegram exec telegram-desktop
+set $spotify spotify -force-device-scale-factor=1.5
+
+# launch favourites
+bindsym $mod+F1 exec $nautilus
+bindsym $mod+F2 exec $chrome
+bindsym $mod+F3 exec $telegram
+bindsym $mod+F4 exec $spotify
+
+for_window [class="TelegramDesktop"] move to workspace 3
+for_window [class="Spotify"] move to workspace 3
+
+# autostart apps
+exec $telegram
+exec i3-sensible-terminal
+exec i3-msg workspace 2
+exec $chrome
+exec $spotify
+exec nm-applet
