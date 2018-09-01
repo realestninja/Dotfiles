@@ -24,7 +24,7 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-expand-region'
 
-Plugin 'wincent/command-t'
+Plugin 'kien/ctrlp.vim'
 
 Plugin 'mattn/emmet-vim'
 Plugin 'cakebaker/scss-syntax.vim'
