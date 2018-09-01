@@ -18,4 +18,6 @@ exec i3-sensible-terminal
 exec i3-msg workspace 2
 exec $chrome
 exec $spotify
-exec nm-applet
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+
