@@ -121,6 +121,8 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias R='ranger'
 alias S='screensaver'
+alias reload-bashrc='source ~/.bashrc'
+alias G='gnome-terminal'
 
 stty -ixon
 
