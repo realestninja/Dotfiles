@@ -21,8 +21,8 @@ for_window [class="^.*"] border pixel 0
 gaps inner $default_inner_width
 gaps outer $default_outer_width
 
-workspace 1 gaps inner $largestspace_inner_width
-workspace 1 gaps outer $largestspace_outer_width
+workspace 1 gaps inner $largespace_inner_width
+workspace 1 gaps outer $largespace_outer_width
 
 # gaps toggler
 mode "gaps_mode" {
