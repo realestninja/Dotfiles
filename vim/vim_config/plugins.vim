@@ -39,7 +39,7 @@ Plugin 'leafgarland/typescript-vim'
 " Plugin 'w0rp/ale'
 
 Plugin 'Shougo/vimproc.vim'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Quramy/tsuquyomi'
 
 Plugin 'chriskempson/base16-vim'
