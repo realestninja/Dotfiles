@@ -218,7 +218,7 @@ bindsym $mod+Shift+Delete mode "system_power_mode"
 
 set $nautilus nautilus --no-desktop
 set $chrome "google-chrome --force-device-scale-factor=1.4 %U"
-set $telegram exec telegram-desktop
+set $telegram Telegram
 set $spotify spotify -force-device-scale-factor=1.5
 
 # launch favourites
