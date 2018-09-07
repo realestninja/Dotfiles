@@ -7,6 +7,7 @@ config=$folderpath"config"
 srcfiles=(
 header
 set-modkey
+focus_wrapping
 font
 i3-gaps
 polybar

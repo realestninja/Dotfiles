@@ -5,6 +5,9 @@
 
 set $mod Mod1
 
+#disable focus_wrapping
+focus_wrapping no
+
 # set font
 # font pango:Terminus 12px
 # font pango: M+ 14px
