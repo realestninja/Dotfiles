@@ -169,7 +169,6 @@ bindsym $mod+Shift+r exec create_i3_config && exec i3-msg restart
 
 # place mouse in bottom right corner after booting + keybind for anytime. requires xdotool
 
-exec --no-startup-id "unclutter &"
 exec xdotool mousemove 3000 3000
 bindsym $mod+m exec xdotool mousemove 3000 3000
 
