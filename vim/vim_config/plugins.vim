@@ -10,8 +10,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ryanoasis/vim-devicons'
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
+"Plugin 'ryanoasis/vim-devicons'
 Plugin 'airblade/vim-rooter'
 
 Plugin 'Shutnik/jshint2.vim'
