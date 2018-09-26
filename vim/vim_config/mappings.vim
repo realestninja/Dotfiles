@@ -11,13 +11,14 @@ nnoremap _ ddpk
 nnoremap <leader>q :q<Enter>
 nnoremap <leader>a :qa<Enter>
 nnoremap <leader>w :w<Enter>
+nnoremap <leader>r :edit<Enter>
 
 " Reload .vimrc & install plugins
 nnoremap <leader>+ :so ~/.vimrc<Enter>
 nnoremap <leader>p :PluginInstall<Enter>
 
 " edit mappings from anywhere
-nnoremap <leader>emap :split ~/Dotfiles/vim/vim_config/mappings.vim<Enter>
+nnoremap <leader>emap :split ~/Dotfiles/vim/vim_config/mappings.vim<Enter><Esc>
 
 " toggle wrap
 nnoremap <leader>tw :setlocal wrap!<Enter>
