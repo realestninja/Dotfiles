@@ -52,7 +52,8 @@ font-2 = monospace:pixelsize=10;1
 
 modules-left = i3 
 modules-center = player-mpris-tail
-modules-right = filesystem volume memory cpu wlan eth battery temperature date
+modules-right = volume battery date
+;modules-right = filesystem volume memory cpu wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 1
