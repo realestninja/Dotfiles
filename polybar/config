@@ -43,10 +43,9 @@ padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 0
-
 ;font-0 = fixed:pixelsize=10;1
 ;font-0 = "MesloLGM Nerd Font RegularForPowerline:size=12:2"
-font-0 = "inconsolata nerd font:size=11:weight=bold;2"
+font-0 = "Inconsolata Nerd Font:size=11:weight=bold;2"
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = monospace:pixelsize=10;1
 
