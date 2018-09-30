@@ -12,6 +12,10 @@ nnoremap <leader>q :q<Enter>
 nnoremap <leader>a :qa<Enter>
 nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>
+nnoremap <leader>bw :bw<Enter>
+nnoremap <leader>bs :split<Enter>
+
+:nnoremap <leader>B :buffers<CR>:buffer<Space>
 
 " Reload .vimrc & install plugins
 nnoremap <leader>+ :so ~/.vimrc<Enter>
