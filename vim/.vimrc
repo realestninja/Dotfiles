@@ -5,3 +5,8 @@ source $HOME/Dotfiles/vim/vim_config/js.vim
 source $HOME/Dotfiles/vim/vim_config/general.vim
 source $HOME/Dotfiles/vim/vim_config/mappings.vim
 source $HOME/Dotfiles/vim/vim_config/center_cursor.vim
+
+" Below is a fix for devicons after re-sourcing the vimconfig
+if exists("g:loaded_webdevicons")
+  call webdevicons#refresh()
+endif
