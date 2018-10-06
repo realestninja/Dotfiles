@@ -8,14 +8,21 @@ nnoremap - kddp
 nnoremap _ ddpk
 
 " leader shortcuts
-nnoremap <leader>q :q<Enter>
+"nnoremap <leader>q :q<Enter>
+"nnoremap <leader>q :bw<Enter>
+nnoremap <leader>q :Bclose<Enter>
 nnoremap <leader>a :qa<Enter>
 nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>
 nnoremap <leader>bw :bw<Enter>
 nnoremap <leader>bs :split<Enter>
 
-:nnoremap <leader>B :buffers<CR>:buffer<Space>
+" Toggle lwindow
+nnoremap <leader>ll :lopen<Enter><C-k>
+nnoremap <leader>lc :lclose<Enter>
+
+" Toggle highlight search
+nnoremap <leader>hs :set hlsearch!<Enter>
 
 " Reload .vimrc & install plugins
 nnoremap <leader>+ :so ~/.vimrc<Enter>
