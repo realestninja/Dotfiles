@@ -1,8 +1,14 @@
-syntax on
+" General settings
 
-set number
+syntax on
+set shell=bash
+set number relativenumber
 set nowrap
 set clipboard=unnamedplus
+set foldmethod=manual
+
+" Fix for nerdfonts
+let appendArtifactFix = 1
 
 " Check for base16colorspace
 if filereadable(expand("~/.vimrc_background"))
@@ -13,7 +19,6 @@ endif
 " auto resize windows
 autocmd VimResized * wincmd =
 
-:set number relativenumber
 
 " deactivate relative linenumbers for inactive buffer
 :augroup numbertoggle
