@@ -1,6 +1,6 @@
 :set noexpandtab
 autocmd Filetype html setlocal ts=2 sw=2 expandtab
-autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 noexpandtab
+autocmd Filetype javascript setlocal ts=2 sw=2 sts=0 
 autocmd Filetype typescript setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype jsx setlocal ts=2 sw=2 sts=0 noexpandtab
 autocmd Filetype tsx setlocal ts=2 sw=2 sts=0 noexpandtab
