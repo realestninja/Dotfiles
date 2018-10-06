@@ -9,8 +9,8 @@ nnoremap _ ddpk
 
 " leader shortcuts
 "nnoremap <leader>q :q<Enter>
-"nnoremap <leader>q :bw<Enter>
-nnoremap <leader>q :Bclose<Enter>
+nnoremap <leader>q :bw<Enter>
+"nnoremap <leader>q :Bclose<Enter>
 nnoremap <leader>a :qa<Enter>
 nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>

@@ -10,9 +10,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'ryanoasis/vim-devicons'
 Plugin 'airblade/vim-rooter'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
+
+"Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 
 Plugin 'Shutnik/jshint2.vim'
@@ -22,8 +22,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'tpope/vim-surround'
-Plugin 'terryma/vim-expand-region'
+"Plugin 'tpope/vim-surround'
+"Plugin 'terryma/vim-expand-region'
 
 Plugin 'kien/ctrlp.vim'
 
@@ -35,15 +35,23 @@ Plugin 'ap/vim-css-color'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
-Plugin 'leafgarland/typescript-vim'
+"Plugin 'pangloss/vim-javascript'
+"Plugin 'mxw/vim-jsx'
+"Plugin 'leshill/vim-json'
+"Plugin 'leafgarland/typescript-vim'
 
-" Plugin 'w0rp/ale'
+Plugin 'w0rp/ale'
+"Plugin 'Shougo/deoplete.nvim'
+"Plugin 'ternjs/tern_for_vim'
+"Plugin 'carlitux/deoplete-ternjs'
 
-Plugin 'Shougo/vimproc.vim'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'Quramy/tsuquyomi'
+"Plugin 'Shougo/vimproc.vim'
+"Plugin 'Valloric/YouCompleteMe'
+"Plugin 'Quramy/tsuquyomi'
 
 Plugin 'chriskempson/base16-vim'
+
+Plugin 'ryanoasis/vim-devicons'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
