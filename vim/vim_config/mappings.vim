@@ -39,3 +39,6 @@ map <leader>ln :setlocal relativenumber!<Enter>
 
 " Replace all occurences
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
+
+" Autocompletion
+" use built in -> insertmode: CTRL+X -> CTRL+I
