@@ -22,8 +22,8 @@ Plugin 'scrooloose/nerdcommenter'
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/rainbow_parentheses.vim'
-"Plugin 'tpope/vim-surround'
-"Plugin 'terryma/vim-expand-region'
+Plugin 'tpope/vim-surround'
+Plugin 'terryma/vim-expand-region'
 
 Plugin 'kien/ctrlp.vim'
 
