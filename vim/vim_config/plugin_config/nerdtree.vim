@@ -1,4 +1,5 @@
 map <C-n> :NERDTreeToggle<CR>
+nmap <leader>n :NERDTreeFind<CR>
 
 let NERDTreeMinimalUI = 1
 let NERDTreeDirArrows = 1
