@@ -123,6 +123,8 @@ alias R='ranger'
 alias S='screensaver'
 alias reload-bashrc='source ~/.bashrc'
 alias G='gnome-terminal'
+alias Dotfiles='cd ~/Dotfiles'
+alias Code='cd ~/Code'
 
 stty -ixon
 
