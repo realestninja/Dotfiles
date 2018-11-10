@@ -45,11 +45,18 @@ Plugin 'w0rp/ale'
 "Plugin 'ternjs/tern_for_vim'
 "Plugin 'carlitux/deoplete-ternjs'
 
+Plugin 'craigemery/vim-autotag'
+
 "Plugin 'Shougo/vimproc.vim'
 "Plugin 'Valloric/YouCompleteMe'
 "Plugin 'Quramy/tsuquyomi'
 
 Plugin 'chriskempson/base16-vim'
+
+Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
+
+" MP
+Plugin 'editorconfig/editorconfig-vim'
 
 Plugin 'ryanoasis/vim-devicons'
 

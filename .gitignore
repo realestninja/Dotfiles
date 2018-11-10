@@ -2,3 +2,5 @@
 *.swo
 */.git
 fonts/.uuid
+vim/vim_config/plugin_config/code-stats.vim
+mp_zsh
