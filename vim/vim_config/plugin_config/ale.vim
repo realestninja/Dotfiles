@@ -17,4 +17,27 @@ let g:ale_filetype_blacklist = ['nerdtree']
 
 let g:ale_cache_executable_check_failures = 1
 
-nnoremap <leader>ef :ALEFix eslint<Enter>
+nnoremap <leader>es :ALEFix eslint<Enter>
+
+"let g:ale_sign_error = '•'
+"let g:ale_sign_warning = '•'
+
+let g:ale_sign_error = "◉"
+let g:ale_sign_warning = "◉"
+
+"still need to be done v 
+"highlight clear SpellBad
+"highlight SpellBad ctermfg=1 ctermbg=2 cterm=undercurl
+
+"still need to be done v
+highlight clear ALEErrorSign
+highlight ALEErrorSign ctermfg=21 ctermbg=22 guifg=#ED6237 guibg=#F5F5F5
+"highlight ALEWarningSign ctermfg=11 ctermbg=15 guifg=#ED6237 guibg=#F5F5F5
+
+"hi link ALEErrorSign    Error
+"hi link ALEWarningSign  Warning
+
+"let g:ale_sign_error = '💣'
+"let g:ale_sign_warning = '⚠'
+"highlight clear ALEErrorSign
+"highlight clear ALEWarningSign
