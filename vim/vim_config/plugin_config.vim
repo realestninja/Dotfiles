@@ -1,4 +1,5 @@
 source $HOME/Dotfiles/vim/vim_config/plugin_config/nerdtree.vim
+source $HOME/Dotfiles/vim/vim_config/plugin_config/nerdcommenter.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/airline.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/delimitmate.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/ale.vim
