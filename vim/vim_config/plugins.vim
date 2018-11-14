@@ -53,7 +53,7 @@ Plugin 'craigemery/vim-autotag'
 
 Plugin 'chriskempson/base16-vim'
 
-Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
+" Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
 
 " MP
 Plugin 'editorconfig/editorconfig-vim'
