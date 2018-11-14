@@ -13,7 +13,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-rooter'
 
 "Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-fugitive'
+"Plugin 'tpope/vim-fugitive'
 
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
