@@ -348,7 +348,4 @@ margin-bottom = 5
 type = custom/script
 exec = ~/Dotfiles/polybar/modules/player-mpris-tail/player-mpris-tail.py
 tail = true
-click-left = /Dotfiles/polybar/modules/player-mpris-tail/player-ctrl.sh previous
-click-right = /Dotfiles/polybar/modules/player-mpris-tail/player-ctrl.sh next
-click-middle = /Dotfiles/polybar/modules/player-mpris-tail/player-ctrl.sh play-pause
-
+click-left = playerctl play-pause
