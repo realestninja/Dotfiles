@@ -13,5 +13,3 @@ set splitright
 autocmd VimEnter * NERDTree
 " Go to previous (last accessed) window.
 autocmd VimEnter * wincmd p
-autocmd VimEnter * NERDTreeFind
-autocmd VimEnter * wincmd p
