@@ -8,6 +8,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'simeji/winresizer'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-rooter'
