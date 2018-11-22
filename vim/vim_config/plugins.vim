@@ -13,8 +13,8 @@ Plugin 'simeji/winresizer'
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-rooter'
 
-"Plugin 'Xuyuanp/nerdtree-git-plugin'
-"Plugin 'tpope/vim-fugitive'
+" Plugin 'Xuyuanp/nerdtree-git-plugin'
+" Plugin 'tpope/vim-fugitive'
 
 Plugin 'Shutnik/jshint2.vim'
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -35,22 +35,24 @@ Plugin 'ap/vim-css-color'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" Plugin 'tpope/vim-obsession'
 
-"Plugin 'pangloss/vim-javascript'
-"Plugin 'mxw/vim-jsx'
-"Plugin 'leshill/vim-json'
-"Plugin 'leafgarland/typescript-vim'
+" Plugin 'pangloss/vim-javascript'
+" Plugin 'mxw/vim-jsx'
+" Plugin 'leshill/vim-json'
+" Plugin 'leafgarland/typescript-vim'
 
 Plugin 'w0rp/ale'
-"Plugin 'Shougo/deoplete.nvim'
-"Plugin 'ternjs/tern_for_vim'
-"Plugin 'carlitux/deoplete-ternjs'
+" Plugin 'Shougo/deoplete.nvim'
+" Plugin 'ternjs/tern_for_vim'
+" Plugin 'carlitux/deoplete-ternjs'
 
 Plugin 'craigemery/vim-autotag'
+Plugin 'mileszs/ack.vim'
 
-"Plugin 'Shougo/vimproc.vim'
-"Plugin 'Valloric/YouCompleteMe'
-"Plugin 'Quramy/tsuquyomi'
+" Plugin 'Shougo/vimproc.vim'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Quramy/tsuquyomi'
 
 Plugin 'chriskempson/base16-vim'
 
