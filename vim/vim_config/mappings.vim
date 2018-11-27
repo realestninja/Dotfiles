@@ -42,3 +42,5 @@ vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 
 " Autocompletion
 " use built in -> insertmode: CTRL+X -> CTRL+I
+
+vnoremap // y/<C-R>"<CR>
