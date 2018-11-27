@@ -19,7 +19,7 @@ nnoremap <leader>bs :split<Enter>
 
 " Toggle quickfix windows
 nmap <silent> <leader>ll :call ToggleList("Location List", 'l')<CR>
-nmap <silent> <leader>cc :call ToggleList("Quickfix List", 'c')<CR>
+nmap <silent> <leader>lc :call ToggleList("Quickfix List", 'c')<CR>
 
 " Toggle highlight search
 nnoremap <leader>hs :set hlsearch!<Enter>
