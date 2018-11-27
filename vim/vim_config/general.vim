@@ -6,6 +6,7 @@ set number relativenumber
 set nowrap
 set clipboard=unnamedplus
 set foldmethod=manual
+set encoding=UTF-8
 
 " Fix for nerdfonts
 let appendArtifactFix = 1
