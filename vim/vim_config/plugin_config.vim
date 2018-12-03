@@ -12,3 +12,4 @@ source $HOME/Dotfiles/vim/vim_config/plugin_config/fugitive.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/ctrlp.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/code-stats.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/ack.vim
+source $HOME/Dotfiles/vim/vim_config/plugin_config/goyo.vim

@@ -55,7 +55,8 @@ Plugin 'mileszs/ack.vim'
 " Plugin 'Quramy/tsuquyomi'
 
 Plugin 'chriskempson/base16-vim'
-
+Plugin 'junegunn/goyo.vim'
+"
 " Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
 
 " MP
