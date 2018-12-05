@@ -7,9 +7,20 @@ set nowrap
 set clipboard=unnamedplus
 set foldmethod=manual
 set encoding=UTF-8
+set splitbelow splitright
+
+" Enable autocompletion:
+" set wildmode=longest,list,full
+
+" Disables automatic commenting on newline:
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Automatically deletes all trailing whitespace on save.
+autocmd BufWritePre * %s/\s\+$//e
 
 " Fix for nerdfonts
 let appendArtifactFix = 1
+let g:webdevicons_enable_nerdtree = 0
 
 " Check for base16colorspace
 if filereadable(expand("~/.vimrc_background"))
@@ -27,7 +38,7 @@ autocmd VimResized * wincmd =
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
 :  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 :augroup END
-	
+
 " clevertabs
 function! CleverTab()
 	if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
