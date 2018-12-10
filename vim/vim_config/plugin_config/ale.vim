@@ -1,4 +1,4 @@
-let g:ale_linters = {'javascript': ['eslint']}
+let g:ale_linters = {'javascript': ['eslint'], 'sass': ['sass-lint']}
 
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_delay = 300
