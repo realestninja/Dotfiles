@@ -30,17 +30,20 @@ Plugin 'terryma/vim-expand-region'
 Plugin 'kien/ctrlp.vim'
 
 Plugin 'mattn/emmet-vim'
-Plugin 'cakebaker/scss-syntax.vim'
+" Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'ap/vim-css-color'
-" Plugin 'danhodos/vim-comb'
+" Plugin 'csscomb/vim-csscomb'
 
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'tpope/vim-obsession'
 
 " Plugin 'pangloss/vim-javascript'
-" Plugin 'mxw/vim-jsx'
+Plugin 'mxw/vim-jsx'
 " Plugin 'leshill/vim-json'
+
+" Plugin 'MaxMEllon/vim-jsx-pretty'
+" Plugin 'mgechev/vim-jsx'
 " Plugin 'leafgarland/typescript-vim'
 
 Plugin 'w0rp/ale'
@@ -57,6 +60,10 @@ Plugin 'mileszs/ack.vim'
 
 Plugin 'chriskempson/base16-vim'
 Plugin 'junegunn/goyo.vim'
+
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
+
 "
 " Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
 

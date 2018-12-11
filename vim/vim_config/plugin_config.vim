@@ -14,4 +14,5 @@ source $HOME/Dotfiles/vim/vim_config/plugin_config/code-stats.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/ack.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/goyo.vim
 " source $HOME/Dotfiles/vim/vim_config/plugin_config/gitgutter.vim
+" source $HOME/Dotfiles/vim/vim_config/plugin_config/ultisnips.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/nerdfonts.vim
