@@ -34,6 +34,7 @@ mode "gaps_mode" {
 
   bindsym q mode "default"
   bindsym Escape mode "default"
+  bindsym Return mode "default"
 }
 
 bindsym $mod+n mode "gaps_mode"
