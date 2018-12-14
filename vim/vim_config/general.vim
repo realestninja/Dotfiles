@@ -40,3 +40,6 @@ function! GetBufferList()
   redir END
   return buflist
 endfunction
+
+" autocmd BufWritePre,FileWritePre *.css,*.less,*.scss,*.sass silent! :CSScomb
+" au BufRead,BufNewFile *.jsx set filetype=jsx

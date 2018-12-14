@@ -16,10 +16,7 @@ nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>
 nnoremap <leader>bw :bw<Enter>
 nnoremap <leader>bs :split<Enter>
-
-" Toggle quickfix windows
-nmap <silent> <leader>ll :call ToggleList("Location List", 'l')<CR>
-nmap <silent> <leader>lc :call ToggleList("Quickfix List", 'c')<CR>
+nnoremap <leader>e :e<Enter>
 
 " Toggle highlight search
 nnoremap <leader>hs :set hlsearch!<Enter>

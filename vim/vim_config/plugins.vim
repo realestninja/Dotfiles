@@ -17,8 +17,8 @@ Plugin 'airblade/vim-rooter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
 
-Plugin 'Shutnik/jshint2.vim'
-Plugin 'othree/javascript-libraries-syntax.vim'
+" Plugin 'Shutnik/jshint2.vim'
+" Plugin 'othree/javascript-libraries-syntax.vim'
 
 Plugin 'scrooloose/nerdcommenter'
 
