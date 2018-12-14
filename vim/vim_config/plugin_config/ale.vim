@@ -22,9 +22,6 @@ nnoremap <leader>ef :ALEFix eslint<Enter>
 let g:ale_sign_error = '•'
 let g:ale_sign_warning = '•'
 
-" let g:ale_sign_error = "◉"
-" let g:ale_sign_warning = "◉"
-
 autocmd ColorScheme * highlight clear SpellBad
 autocmd ColorScheme * highlight SpellBad ctermfg=16 ctermbg=18 cterm=undercurl
 
@@ -39,7 +36,5 @@ autocmd ColorScheme * highlight ALEWarningSign ctermfg=3 ctermbg=18
 "hi link ALEErrorSign    Error
 "hi link ALEWarningSign  Warning
 
-" let g:ale_sign_error = '💣'
-" let g:ale_sign_warning = '⚠'
 "highlight clear ALEErrorSign
 "highlight clear ALEWarningSign
