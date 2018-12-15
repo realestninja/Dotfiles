@@ -12,7 +12,7 @@ set $compact_outer_width 0
 set $largespace_inner_width 30
 set $largespace_outer_width 150
 
-# largest space 
+# largest space
 set $largestspace_inner_width 40
 set $largestspace_outer_width 450
 
@@ -35,6 +35,7 @@ mode "gaps_mode" {
   bindsym q mode "default"
   bindsym Escape mode "default"
   bindsym Return mode "default"
+  bindsym $mod+n mode "default"
 }
 
 bindsym $mod+n mode "gaps_mode"
