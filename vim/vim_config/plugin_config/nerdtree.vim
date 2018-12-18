@@ -9,7 +9,18 @@ let NERDTreeAutoDeleteBuffer = 1
 
 set splitright
 
-" Start NERDTree
-autocmd VimEnter * NERDTree
-" Go to previous (last accessed) window.
-autocmd VimEnter * wincmd p
+"open a nerdtree when vim starts
+autocmd vimenter * call s:CheckToOpenNERDTree()
+
+function! s:CheckToOpenNERDTree() abort
+
+    "don't open nerdtree for gitcommits
+    if &ft == 'gitcommit'
+        return
+    endif
+
+    NERDTree
+
+		" Go to previous (last accessed) window.
+		autocmd VimEnter * wincmd p
+endfunction
