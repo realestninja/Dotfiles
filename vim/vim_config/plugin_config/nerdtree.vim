@@ -15,7 +15,7 @@ autocmd vimenter * call s:CheckToOpenNERDTree()
 function! s:CheckToOpenNERDTree() abort
 
     "don't open nerdtree for gitcommits
-    if &ft == 'gitcommit'
+    if &ft == 'gitcommit' || &ft == 'gitrebase'
         return
     endif
 
