@@ -64,9 +64,6 @@ Plugin 'junegunn/goyo.vim'
 " Plugin 'SirVer/ultisnips'
 " Plugin 'honza/vim-snippets'
 
-"
-" Plugin 'https://gitlab.com/code-stats/code-stats-vim.git'
-
 " MP
 Plugin 'editorconfig/editorconfig-vim'
 
