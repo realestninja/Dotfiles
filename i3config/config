@@ -22,6 +22,10 @@ font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # chose a FreeType font, such as:
 # font pango:DejaVu Sans Mono 10
 
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+# font xft:URWGothic-Book 11
+
 # i3-gaps settings
 
 # default gaps
@@ -36,7 +40,7 @@ set $compact_outer_width 0
 set $largespace_inner_width 30
 set $largespace_outer_width 150
 
-# largest space 
+# largest space
 set $largestspace_inner_width 40
 set $largestspace_outer_width 450
 
@@ -49,6 +53,7 @@ workspace 1 gaps inner $largespace_inner_width
 workspace 1 gaps outer $largespace_outer_width
 
 # gaps toggler
+bindsym $mod+n mode "gaps_mode"
 mode "gaps_mode" {
   bindsym 0 exec "i3-msg gaps inner current set 0 && i3-msg gaps outer current set 0"
   bindsym h exec "i3-msg gaps inner current set $compact_inner_width && i3-msg gaps outer current set $compact_outer_width"
@@ -59,9 +64,53 @@ mode "gaps_mode" {
   bindsym q mode "default"
   bindsym Escape mode "default"
   bindsym Return mode "default"
+  bindsym $mod+n mode "default"
 }
 
-bindsym $mod+n mode "gaps_mode"
+# Smart gaps (gaps used if only more than one container on the workspace)
+smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace)
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
+# Also from Manjaro i3 config
+set $gaps_adjustment Gaps: (o) outer, (i) inner
+set $gaps_adjustment_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $gaps_adjustment_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$gaps_adjustment"
+
+mode "$gaps_adjustment" {
+        bindsym o      mode "$gaps_adjustment_outer"
+        bindsym i      mode "$gaps_adjustment_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$gaps_adjustment_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$gaps_adjustment_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
 
 # polybar
 exec --no-startup-id ~/.config/polybar/launch.sh
@@ -76,13 +125,19 @@ exec sh ~/.fehbg
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Inconsolata Nerd Font-20'
+# bindsym $mod+d exec dmenu_run -fn 'Inconsolata Nerd Font-20'
+
+# start program launcher
+bindsym $mod+d exec --no-startup-id dmenu_recency 'Inconsolata Nerd Font-20'
+
+# launch categorized menu
+bindsym $mod+z exec --no-startup-id morc_menu
 
 # change focus
 bindsym $mod+h focus left
@@ -96,13 +151,7 @@ bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
 
-# split in horizontal orientation
-bindsym $mod+b split h
-
-# split in vertical orientation
-bindsym $mod+v split v
-
-# split toggle 
+# split toggle
 bindsym $mod+t split toggle
 
 # enter fullscreen mode for the focused container
@@ -119,13 +168,25 @@ bindsym $mod+Shift+space floating toggle
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
+# toggle sticky
+bindsym $mod+Shift+s sticky toggle
+
 # focus the parent container
 bindsym $mod+a focus parent
 
 # focus the child container
 bindsym $mod+Shift+a focus child
 
+# move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the next scratchpad window or hide the focused scratchpad window.
+# If there are multiple scratchpad windows, this command cycles through them.
+bindsym $mod+minus scratchpad show
+
 # switch to workspace
+bindsym $mod+b workspace back_and_forth
+bindsym $mod+Shift+b move container to workspace back_and_forth; workspace back_and_forth
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -134,8 +195,10 @@ bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
 bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+
+#navigate workspaces next / previous
+bindsym $mod+Right workspace next
+bindsym $mod+Left workspace prev
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -146,15 +209,18 @@ bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
-bindsym $mod+Shift+9 move container to workspace 9
-bindsym $mod+Shift+0 move container to workspace 10
 
-# resize window 
+# resize window
 mode "resize" {
         bindsym h resize shrink width 5 px or 5 ppt
         bindsym k resize grow height 5 px or 5 ppt
         bindsym j resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -162,6 +228,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Lock screen (Manjaro)
+bindsym $mod+9 exec --no-startup-id blurlock
+
+# hide/unhide i3status bar (Manjaro)
+# bindsym $mod+m bar mode toggle
 # create new config file before reload/restart
 # reload the configuration file
 bindsym $mod+Shift+c exec create_i3_config && exec i3-msg reload
@@ -208,19 +279,25 @@ bindsym $mod+p $playpause
 bindsym $mod+o $playnext
 bindsym $mod+i $playprev
 
-# system/power menu
-mode "system_power_mode" {
-  bindsym s exec systemctl poweroff
-  bindsym r exec systemctl reboot
-  bindsym e exec i3-msg exit
+# Set shut down, restart and locking features
+bindsym $mod+0 mode "$mode_system"
+set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym s exec --no-startup-id i3exit suspend, mode "default"
+    bindsym u exec --no-startup-id i3exit switch_user, mode "default"
+    bindsym e exec --no-startup-id i3exit logout, mode "default"
+    bindsym h exec --no-startup-id i3exit hibernate, mode "default"
+    bindsym r exec --no-startup-id i3exit reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-  bindsym Escape mode "default"
+    # exit system mode: "Enter" or "Escape"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
 }
 
-bindsym $mod+Shift+Delete mode "system_power_mode"
-
 set $nautilus nautilus --no-desktop
-set $chrome "google-chrome --force-device-scale-factor=1.4 %U"
+set $chrome "google-chrome-stable --force-device-scale-factor=1.4 %U"
 set $telegram Telegram
 set $spotify spotify -force-device-scale-factor=1.5
 
@@ -234,11 +311,149 @@ for_window [class="TelegramDesktop"] move to workspace 3
 for_window [class="Spotify"] move to workspace 3
 
 # autostart apps
-exec $telegram
-exec i3-sensible-terminal
-exec i3-msg workspace 2
-exec $chrome
-exec $spotify
+# exec $telegram
+# exec i3-sensible-terminal
+# exec i3-msg workspace 2
+# exec $chrome
+# exec $spotify
+# exec --no-startup-id nm-applet
+# exec --no-startup-id blueman-applet
+
+# bmenu (Manjaro)
+bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
+# bindsym $mod+Shift+F3 exec gksu pcmanfm
+
+# Autostart applications (Manjaro)
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
-exec --no-startup-id blueman-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pamac-tray
+exec --no-startup-id clipit
+# exec --no-startup-id blueman-applet
+# exec_always --no-startup-id sbxkb
+exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_green
+exec --no-startup-id xautolock -time 10 -locker blurlock
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
+
+# Start i3bar to display a workspace bar (plus the system information i3status if available)
+bar {
+	i3bar_command i3bar
+	status_command i3status
+	position bottom
+
+## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
+#	tray_output primary
+#	tray_output eDP1
+
+	bindsym button4 nop
+	bindsym button5 nop
+#   font xft:URWGothic-Book 11
+	strip_workspace_numbers yes
+
+    colors {
+        background #222D31
+        statusline #F9FAF9
+        separator  #454947
+
+#                      border  backgr. text
+        focused_workspace  #F9FAF9 #16a085 #292F34
+        active_workspace   #595B5B #353836 #FDF6E3
+        inactive_workspace #595B5B #222D31 #EEE8D5
+        binding_mode       #16a085 #2C2C2C #F9FAF9
+        urgent_workspace   #16a085 #FDF6E3 #E5201D
+    }
+}
+
+################################################################################################
+## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
+################################################################################################
+
+exec --no-startup-id volumeicon
+bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
+#exec --no-startup-id pulseaudio
+#exec --no-startup-id pa-applet
+#bindsym $mod+Ctrl+m exec pavucontrol
+
+################################################################################################
+
+# Screen brightness controls
+# bindsym XF86MonBrightnessUp exec "xbacklight -inc 10; notify-send 'brightness up'"
+# bindsym XF86MonBrightnessDown exec "xbacklight -dec 10; notify-send 'brightness down'"
+
+# Open specific applications in floating mode
+for_window [title="alsamixer"] floating enable border pixel 1
+for_window [class="calamares"] floating enable border normal
+for_window [class="Clipgrab"] floating enable
+for_window [title="File Transfer*"] floating enable
+for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="GParted"] floating enable border normal
+for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [class="Lightdm-settings"] floating enable
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Manjaro-hello"] floating enable
+for_window [class="Manjaro Settings Manager"] floating enable border normal
+for_window [title="MuseScore: Play Panel"] floating enable
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Oblogout"] fullscreen enable
+for_window [class="octopi"] floating enable
+for_window [title="About Pale Moon"] floating enable
+for_window [class="Pamac-manager"] floating enable
+for_window [class="Pavucontrol"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="Simple-scan"] floating enable border normal
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
+for_window [class="Skype"] floating enable border normal
+for_window [class="Timeset-gui"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="Xfburn"] floating enable
+
+# switch to workspace with urgent window automatically
+# for_window [urgent=latest] focus
+
+# Color palette used for the terminal ( ~/.Xresources file )
+# Colors are gathered based on the documentation:
+# https://i3wm.org/docs/userguide.html#xresources
+# Change the variable name at the place you want to match the color
+# of your terminal like this:
+# [example]
+# If you want your bar to have the same background color as your
+# terminal background change the line 362 from:
+# background #14191D
+# to:
+# background $term_background
+# Same logic applied to everything else.
+set_from_resource $term_background background
+set_from_resource $term_foreground foreground
+set_from_resource $term_color0     color0
+set_from_resource $term_color1     color1
+set_from_resource $term_color2     color2
+set_from_resource $term_color3     color3
+set_from_resource $term_color4     color4
+set_from_resource $term_color5     color5
+set_from_resource $term_color6     color6
+set_from_resource $term_color7     color7
+set_from_resource $term_color8     color8
+set_from_resource $term_color9     color9
+set_from_resource $term_color10    color10
+set_from_resource $term_color11    color11
+set_from_resource $term_color12    color12
+set_from_resource $term_color13    color13
+set_from_resource $term_color14    color14
+set_from_resource $term_color15    color15
+
+
+# Theme colors
+# class                   border  backgr. text    indic.   child_border
+  client.focused          #556064 #556064 #80FFF9 #FDF6E3
+  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
+  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
+
+  client.background       #2B2C2B
 
