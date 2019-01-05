@@ -8,6 +8,7 @@ set clipboard=unnamedplus
 set foldmethod=manual
 set encoding=UTF-8
 set splitbelow splitright
+set backspace=indent,eol,start
 
 " Enable autocompletion:
 " set wildmode=longest,list,full
