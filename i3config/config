@@ -68,11 +68,11 @@ mode "gaps_mode" {
 }
 
 # Smart gaps (gaps used if only more than one container on the workspace)
-smart_gaps on
+# smart_gaps on
 
 # Smart borders (draw borders around container only if it is not the only container on this workspace)
 # on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
-smart_borders on
+# smart_borders on
 
 # Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
 # Also from Manjaro i3 config
@@ -298,7 +298,7 @@ mode "$mode_system" {
 
 set $nautilus nautilus --no-desktop
 set $chrome "google-chrome-stable --force-device-scale-factor=1.4 %U"
-set $telegram Telegram
+set $telegram telegram-desktop
 set $spotify spotify -force-device-scale-factor=1.5
 
 # launch favourites
