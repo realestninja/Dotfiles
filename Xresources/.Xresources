@@ -55,7 +55,7 @@ XTerm*selectToClipboard: true
 *color15:                         #f8f8f8
 
 Xcursor.theme: DMZ-Black
-Xcursor.size:                     0
+Xcursor.size:                     32
 
 URxvt.font:                       xft:TerminessTTFNerdFontMono:size=20
 
