@@ -11,6 +11,8 @@ set splitright
 
 "open a nerdtree when vim starts
 autocmd vimenter * call s:CheckToOpenNERDTree()
+" Go to previous (last accessed) window.
+autocmd VimEnter * wincmd p
 
 function! s:CheckToOpenNERDTree() abort
 
@@ -19,8 +21,6 @@ function! s:CheckToOpenNERDTree() abort
         return
     endif
 
-    NERDTree
+		NERDTree
 
-		" Go to previous (last accessed) window.
-		autocmd VimEnter * wincmd p
 endfunction
