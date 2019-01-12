@@ -456,4 +456,4 @@ set_from_resource $term_color15    color15
 
   client.background       #2B2C2B
 
-exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 1 -locker blurlock
+exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 5 -locker blurlock
