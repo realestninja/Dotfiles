@@ -335,7 +335,6 @@ exec --no-startup-id clipit
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -locker blurlock
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -457,3 +456,4 @@ set_from_resource $term_color15    color15
 
   client.background       #2B2C2B
 
+exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 1 -locker blurlock
