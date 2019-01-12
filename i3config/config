@@ -119,7 +119,7 @@ exec --no-startup-id ~/.config/polybar/launch.sh
 exec --no-startup-id "compton -b --config ~/.config/compton.conf"
 
 # set workspace-background
-exec sh ~/.fehbg
+exec --no-startup-id sh ~/.fehbg
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
