@@ -1,10 +1,10 @@
-set $nautilus nautilus --no-desktop
+# set $nautilus nautilus --no-desktop
 set $chrome "google-chrome-stable --force-device-scale-factor=1.4 %U"
 set $telegram telegram-desktop
 set $spotify spotify -force-device-scale-factor=1.5
 
 # launch favourites
-bindsym $mod+F1 exec $nautilus
+bindsym $mod+F1 exec ranger
 bindsym $mod+F2 exec $chrome
 bindsym $mod+F3 exec $telegram
 bindsym $mod+F4 exec $spotify

@@ -1,1 +1,1 @@
-exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 5 -locker blurlock
+exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 10 -locker blurlock

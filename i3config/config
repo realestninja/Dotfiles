@@ -296,13 +296,13 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
-set $nautilus nautilus --no-desktop
+# set $nautilus nautilus --no-desktop
 set $chrome "google-chrome-stable --force-device-scale-factor=1.4 %U"
 set $telegram telegram-desktop
 set $spotify spotify -force-device-scale-factor=1.5
 
 # launch favourites
-bindsym $mod+F1 exec $nautilus
+bindsym $mod+F1 exec ranger
 bindsym $mod+F2 exec $chrome
 bindsym $mod+F3 exec $telegram
 bindsym $mod+F4 exec $spotify
@@ -455,4 +455,4 @@ set_from_resource $term_color15    color15
 
   client.background       #2B2C2B
 
-exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 5 -locker blurlock
+exec --no-startup-id xautolock -corners 000- -cornersize 30 -time 10 -locker blurlock
