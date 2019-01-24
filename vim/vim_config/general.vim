@@ -10,6 +10,8 @@ set encoding=UTF-8
 set splitbelow splitright
 set backspace=indent,eol,start
 
+autocmd ColorScheme * hi Normal ctermbg=NONE
+
 " Enable autocompletion:
 " set wildmode=longest,list,full
 
