@@ -11,6 +11,8 @@ case $- in
       *) return;;
 esac
 
+source ~/.profile
+
 use_color=true
 
 # Set colorful PS1 only on colorful terminals.
@@ -154,8 +156,6 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
-
-export EDITOR=vim
 
 #Display git branch
 # get current branch in git repo
