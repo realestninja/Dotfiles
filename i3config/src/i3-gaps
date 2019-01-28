@@ -16,7 +16,7 @@ set $largespace_outer_width 150
 set $largestspace_inner_width 40
 set $largestspace_outer_width 450
 
-for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 2
 
 gaps inner $default_inner_width
 gaps outer $default_outer_width
