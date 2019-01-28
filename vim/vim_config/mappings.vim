@@ -2,7 +2,6 @@ let mapleader = ","
 
 " jj to leave insertmode
 imap jj <Esc>
-
 nnoremap <Enter> :w<Enter>
 
 " swap lines
