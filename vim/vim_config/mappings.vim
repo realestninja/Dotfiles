@@ -15,9 +15,12 @@ nnoremap <leader>q :bw<Enter>
 nnoremap <leader>a :qa<Enter>
 nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>
-nnoremap <leader>bw :bw<Enter>
+nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>
+
+" join lines
+imap gJ gJdw
 
 " Toggle highlight search
 nnoremap <leader>hs :set hlsearch!<Enter>
