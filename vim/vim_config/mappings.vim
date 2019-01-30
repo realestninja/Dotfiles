@@ -25,6 +25,11 @@ nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>
 
+" buffer cycling
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <leader>bb :buffers<Enter>
+
 " join lines
 imap gJ gJdw
 
