@@ -66,6 +66,7 @@ Plugin 'junegunn/goyo.vim'
 
 " MP
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'styled-components/vim-styled-components'
 
 Plugin 'ryanoasis/vim-devicons'
 
