@@ -62,3 +62,10 @@ autocmd FileType gitrebase nnoremap <C-p> 0cwpick<esc>
 autocmd FileType gitrebase nnoremap <C-r> 0cwreword<esc>
 autocmd FileType gitrebase nnoremap <C-s> 0cwsquash<esc>
 autocmd FileType gitrebase nnoremap <C-f> 0cwfixup<esc>
+
+" Git merge conflict
+" <leader>gd -> enter diffmode
+" d2o -> pick from leftside
+" d3o -> pick from rightside
+" ]c -> next conflict
+" [c -> prev conflict
