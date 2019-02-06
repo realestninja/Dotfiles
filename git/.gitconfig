@@ -1,3 +1,7 @@
+[include]
+	path = ~/user.gitconfig
+[pull]
+	rebase = true
 [core]
 	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [color]
