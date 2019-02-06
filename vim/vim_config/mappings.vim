@@ -2,22 +2,36 @@ let mapleader = ","
 
 " jj to leave insertmode
 imap jj <Esc>
-nnoremap <Enter> :w<Enter>
+
+" Close buffer but keep split
+nnoremap <Backspace> :bp\|bd \#<Enter>
+
+" Close split but keep buffer
+nnoremap <leader><Backspace> <C-w>q<Enter>
 
 " swap lines
 nnoremap - kddp
 nnoremap _ ddpk
 
-" leader shortcuts
+nnoremap <leader>w :w<Enter>
+nnoremap <Enter> :w<Enter>
+
 "nnoremap <leader>q :q<Enter>
 nnoremap <leader>q :bw<Enter>
 "nnoremap <leader>q :Bclose<Enter>
 nnoremap <leader>a :qa<Enter>
-nnoremap <leader>w :w<Enter>
 nnoremap <leader>r :edit<Enter>
-nnoremap <leader>bw :bw<Enter>
+nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>
+
+" buffer cycling
+nnoremap <Tab> :bnext<CR>
+nnoremap <S-Tab> :bprevious<CR>
+nnoremap <leader>bb :buffers<Enter>
+
+" join lines
+imap gJ gJdw
 
 " Toggle highlight search
 nnoremap <leader>hs :set hlsearch!<Enter>
@@ -48,3 +62,10 @@ autocmd FileType gitrebase nnoremap <C-p> 0cwpick<esc>
 autocmd FileType gitrebase nnoremap <C-r> 0cwreword<esc>
 autocmd FileType gitrebase nnoremap <C-s> 0cwsquash<esc>
 autocmd FileType gitrebase nnoremap <C-f> 0cwfixup<esc>
+
+" Git merge conflict
+" <leader>gd -> enter diffmode
+" d2o -> pick from leftside
+" d3o -> pick from rightside
+" ]c -> next conflict
+" [c -> prev conflict

@@ -1,0 +1,32 @@
+[include]
+	path = ~/user.gitconfig # credentials
+[pull]
+	rebase = true
+[alias]
+	aa = add -A
+	ap = add -p
+	c = commit -v
+	cv = commit -v
+	cm = commit -m
+	ca = commit --amend
+	co = checkout
+	cob = checkout -b
+	cc = checkout -- .
+	cnt = rev-list --count	# example: git rev-list --count master..HEAD
+	d = diff
+	ds = diff --staged
+	dsn = diff --staged --name-only
+	fo = fetch origin
+	l = log
+	p = push origin HEAD
+	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
+	s = status
+[core]
+	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+[color]
+	ui = always
+[color "diff-highlight"]
+ 	oldNormal = red bold
+ 	oldHighlight = red bold 52
+ 	newNormal = green bold
+ 	newHighlight = green bold 22
