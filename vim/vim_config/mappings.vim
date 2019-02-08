@@ -58,10 +58,10 @@ vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 vnoremap ++ y/<C-R>"<CR>
 
 " Git rebase
-autocmd FileType gitrebase nnoremap <C-p> 0cwpick<esc>
-autocmd FileType gitrebase nnoremap <C-r> 0cwreword<esc>
-autocmd FileType gitrebase nnoremap <C-s> 0cwsquash<esc>
-autocmd FileType gitrebase nnoremap <C-f> 0cwfixup<esc>
+autocmd FileType gitrebase nnoremap <leader>p 0cwpick<esc>
+autocmd FileType gitrebase nnoremap <leader>r 0cwreword<esc>
+autocmd FileType gitrebase nnoremap <leader>s 0cwsquash<esc>
+autocmd FileType gitrebase nnoremap <leader>f 0cwfixup<esc>
 
 " Git merge conflict
 " <leader>gd -> enter diffmode
