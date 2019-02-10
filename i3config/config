@@ -319,6 +319,8 @@ for_window [class="Spotify"] move to workspace 3
 # exec --no-startup-id nm-applet
 # exec --no-startup-id blueman-applet
 
+exec --no-startup-id devmon
+
 # bmenu (Manjaro)
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 # bindsym $mod+Shift+F3 exec gksu pcmanfm
