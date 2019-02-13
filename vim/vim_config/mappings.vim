@@ -25,6 +25,9 @@ nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>
 
+" center current line
+nnoremap <leader>. z.
+
 " buffer cycling
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
