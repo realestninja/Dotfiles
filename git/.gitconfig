@@ -21,7 +21,7 @@
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
 	s = status
 [core]
-	pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
+	; pager = /usr/local/share/git-core/contrib/diff-highlight/diff-highlight | less
 [color]
 	ui = always
 [color "diff-highlight"]
