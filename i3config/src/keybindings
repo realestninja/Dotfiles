@@ -6,6 +6,7 @@ bindsym $mod+Return exec terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym $mod+BackSpace kill
 
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run -fn 'Inconsolata Nerd Font-20'
