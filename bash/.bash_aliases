@@ -14,8 +14,11 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias t='urxvt &'
 alias r='ranger'
 alias R='ranger'
 alias reload-bashrc='source ~/.bashrc'
 alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
+
+alias g='git'
