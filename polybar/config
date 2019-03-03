@@ -20,6 +20,25 @@ primary = #ffb52a
 secondary = #e60053
 alert = #bd2c40
 
+[solarized]
+yellow = #b58900
+orange = #cb4b16
+red = #dc322f
+magenta = #d33682
+violet = #6c71c4
+blue = #268bd2
+cyan = #2aa198
+green = #859900
+
+base03 = #002b36
+base02 = #073642
+base01 = #586e75
+base00 = #657b83
+base0 = #839496
+base1 = #93a1a1
+base2 = #eee8d5
+base3 = #fdf6e3
+
 [bar/bar1]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
@@ -29,7 +48,7 @@ height = 30
 radius = 0.0
 fixed-center = true
 
-background = ${colors.background}
+background = ${solarized.base02}
 foreground = ${colors.foreground}
 
 line-size = 3
@@ -47,12 +66,14 @@ module-margin-right = 0
 font-0 = "MesloLGM Nerd Font:size=14:weight=regular;2"
 ;font-0 = "FuraMono Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Inconsolata Nerd Font:size=15:weight=regular;2"
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+;font-0 = "Fantasque Sans Mono:pixelsize=14;3"
+font-1 = "Iosevka Nerd Font:pixelsize=14;3"
+;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = monospace:pixelsize=10;1
 
 modules-left = i3
 modules-center = player-mpris-tail
-modules-right = temperature cpu memory filesystem volume battery date
+modules-right = temperature cpu memory filesystem battery date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
@@ -194,7 +215,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #93a1a1
+format-underline = ${solarized.base1}
 label =  %percentage%% 
 
 [module/memory]
@@ -202,7 +223,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #d33682
+format-underline = ${solarized.magenta}
 label =  %percentage_used%% 
 
 [module/wlan]
@@ -211,7 +232,7 @@ interface = wlp3s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #2aa198
+format-connected-underline = ${solarized.cyan}
 label-connected = %essid% 
 
 format-disconnected =
@@ -247,43 +268,33 @@ format-disconnected =
 type = internal/date
 interval = 5
 
-date = " %d-%m-%Y  - "
-
-time = %H:%M
+date = " %d-%m-%Y"
+time =  %H:%M
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #268bd2
+format-underline = ${solarized.blue}
 
-label = %date% %time% 
+label = " %date% - %time% "
 
 [module/volume]
 type = internal/volume
 
-format-volume = <label-volume> <bar-volume>
-label-volume = VOL
-label-volume-foreground = ${root.foreground}
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 2
+format-volume-background = ${color.primary}
+label-volume = %percentage%%
+label-muted = "婢"
+label-muted-background = ${color.primary}
+label-muted-padding = 2
 
-format-muted-prefix = " "
-format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
-
-bar-volume-width = 10
-bar-volume-foreground-0 = #859900
-bar-volume-foreground-1 = #859900
-bar-volume-foreground-2 = #859900
-bar-volume-foreground-3 = #859900
-bar-volume-foreground-4 = #859900
-bar-volume-foreground-5 = #b58900
-bar-volume-foreground-6 = #dc322f
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+ramp-volume-0 = 奄
+ramp-volume-1 = 奄
+ramp-volume-2 = 奔
+ramp-volume-3 = 奔
+ramp-volume-4 = 墳
+ramp-volume-5 = 墳
+ramp-volume-6 = 墳
 
 [module/battery]
 type = internal/battery
@@ -292,7 +303,7 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging> 
-format-charging-underline = #2aa198
+format-charging-underline = ${solarized.cyan}
 
 format-discharging = <ramp-capacity> <label-discharging> 
 format-discharging-underline = ${self.format-charging-underline}
@@ -318,7 +329,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #dc322f
+format-underline = ${solarized.red}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
