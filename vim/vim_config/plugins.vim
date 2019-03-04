@@ -27,7 +27,6 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-expand-region'
 
-" Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plugin 'junegunn/fzf.vim'
 
@@ -54,7 +53,6 @@ Plugin 'w0rp/ale'
 " Plugin 'carlitux/deoplete-ternjs'
 
 Plugin 'craigemery/vim-autotag'
-Plugin 'mileszs/ack.vim'
 
 " Plugin 'Shougo/vimproc.vim'
 " Plugin 'Valloric/YouCompleteMe'
