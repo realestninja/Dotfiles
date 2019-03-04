@@ -27,7 +27,9 @@ Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'terryma/vim-expand-region'
 
-Plugin 'kien/ctrlp.vim'
+" Plugin 'kien/ctrlp.vim'
+Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plugin 'junegunn/fzf.vim'
 
 Plugin 'mattn/emmet-vim'
 " Plugin 'cakebaker/scss-syntax.vim'
