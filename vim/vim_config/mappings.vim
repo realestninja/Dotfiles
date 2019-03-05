@@ -58,7 +58,9 @@ vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
 " Autocompletion
 " use built in -> insertmode: CTRL+X -> CTRL+I
 
-vnoremap ++ y/<C-R>"<CR>
+" vnoremap ++ y/<C-R>"<CR>
+
+noremap * *N:set hlsearch<Enter>
 
 " Git rebase
 autocmd FileType gitrebase nnoremap <leader>p 0cwpick<esc>
