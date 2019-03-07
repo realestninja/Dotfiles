@@ -298,7 +298,7 @@ mode "$mode_system" {
 }
 
 # set $nautilus nautilus --no-desktop
-set $chrome "google-chrome-stable --force-device-scale-factor=1.4 %U"
+set $chrome "google-chrome-stable --force-device-scale-factor=2 %U"
 set $telegram telegram-desktop
 set $spotify spotify -force-device-scale-factor=1.5
 
