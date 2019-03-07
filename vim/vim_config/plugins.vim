@@ -50,7 +50,7 @@ Plugin 'mxw/vim-jsx'
 Plugin 'w0rp/ale'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'ternjs/tern_for_vim'
-" Plugin 'carlitux/deoplete-ternjs'
+Plugin 'carlitux/deoplete-ternjs'
 
 Plugin 'craigemery/vim-autotag'
 
@@ -58,7 +58,8 @@ Plugin 'craigemery/vim-autotag'
 " Plugin 'Valloric/YouCompleteMe'
 " Plugin 'Quramy/tsuquyomi'
 
-Plugin 'chriskempson/base16-vim'
+" Plugin 'chriskempson/base16-vim' <- check if bug was fixed
+Plugin 'danielwe/base16-vim'
 Plugin 'junegunn/goyo.vim'
 
 " Plugin 'honza/vim-snippets'
