@@ -1,5 +1,5 @@
 [include]
-	path = ~/user.gitconfig # credentials
+	path = ~/.user.gitconfig # credentials
 [pull]
 	rebase = true
 [alias]

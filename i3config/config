@@ -256,13 +256,13 @@ bindsym $mod+F12 exec "scrot 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/P
 bindsym $mod+F11 exec "scrot -u 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Current Window'"
 
 # media keys / volume control etc.
-bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 10%+"
-bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 10%-"
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # 'pactl list sinks' to get sink number
+bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
+bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
+bindsym XF86AudioMute exec pactl set-sink-mute 10 toggle # 'pactl list sinks' to get sink number
 
 # change brightness
-bindsym XF86MonBrightnessUp exec "light -A 5"
-bindsym XF86MonBrightnessDown exec "light -U 5"
+bindsym XF86MonBrightnessUp exec "light -A 10"
+bindsym XF86MonBrightnessDown exec "light -U 10"
 # using https://github.com/haikarainen/light.git
 
 # play/pause spotify
@@ -300,7 +300,7 @@ mode "$mode_system" {
 # set $nautilus nautilus --no-desktop
 set $chrome "google-chrome-stable --force-device-scale-factor=2 %U"
 set $telegram telegram-desktop
-set $spotify spotify -force-device-scale-factor=1.5
+set $spotify spotify -force-device-scale-factor=2
 
 # launch favourites
 bindsym $mod+F1 exec ranger
