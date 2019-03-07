@@ -242,8 +242,8 @@ bindsym $mod+Shift+r exec create_i3_config && exec i3-msg restart
 
 # place mouse in bottom right corner after booting + keybind for anytime. requires xdotool
 
-exec xdotool mousemove 3000 3000
-bindsym $mod+m exec xdotool mousemove 3000 3000
+exec xdotool mousemove 9000 9000
+bindsym $mod+m exec xdotool mousemove 9000 9000
 
 # inverted scrolling for thinkpad touchpad
 exec --no-startup-id xinput --set-prop 11 "Synaptics Scrolling Distance" -111 -111

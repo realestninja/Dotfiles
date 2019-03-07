@@ -1,5 +1,5 @@
 # place mouse in bottom right corner after booting + keybind for anytime. requires xdotool
 
-exec xdotool mousemove 3000 3000
-bindsym $mod+m exec xdotool mousemove 3000 3000
+exec xdotool mousemove 9000 9000
+bindsym $mod+m exec xdotool mousemove 9000 9000
 
