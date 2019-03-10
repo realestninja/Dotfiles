@@ -207,3 +207,5 @@ function parse_git_dirty {
 # export PS1="\[\e[31m\](\[\e[m\]\[\e[36m\]\A\[\e[m\]\[\e[31m\])\[\e[m\] \[\e[34m\]\u\[\e[m\]\[\e[31m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\]$\[\e[m\] "
 # export PS1="\[\e[34m\]\u\[\e[m\]\[\e[31m\]@\[\e[m\]\[\e[35m\]\h\[\e[m\] \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\]$\[\e[m\] "
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\]$\[\e[m\] "
+
+export FZF_DEFAULT_COMMAND='ag -g ""'
