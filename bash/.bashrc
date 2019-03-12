@@ -142,6 +142,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_aliases_work ]; then
+    . ~/.bash_aliases_work
+fi
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
