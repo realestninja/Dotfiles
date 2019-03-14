@@ -22,3 +22,4 @@ alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
 
 alias g='git'
+alias update='sudo pacman -Syyu && yay -Syyu'
