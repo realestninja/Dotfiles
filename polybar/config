@@ -77,7 +77,8 @@ modules-right = temperature cpu memory filesystem battery date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
-tray-padding = 1
+tray-padding = 2
+tray-maxsize = 70
 ;tray-transparent = true
 ;tray-background = #0063ff
 
