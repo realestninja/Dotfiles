@@ -7,20 +7,20 @@ let NERDTreeDirArrows = 1
 let NERDTreeAutoDeleteBuffer = 1
 "let NERDTreeWinSize=40
 
-set splitright
+" set splitright
 
 "open a nerdtree when vim starts
-autocmd vimenter * call s:CheckToOpenNERDTree()
+" autocmd vimenter * call s:CheckToOpenNERDTree()
 " Go to previous (last accessed) window.
-autocmd VimEnter * wincmd p
+" autocmd VimEnter * wincmd p
 
-function! s:CheckToOpenNERDTree() abort
+" function! s:CheckToOpenNERDTree() abort
 
-    "don't open nerdtree for gitcommits
-    if &ft == 'gitcommit' || &ft == 'gitrebase'
-        return
-    endif
+    " "don't open nerdtree for gitcommits
+    " if &ft == 'gitcommit' || &ft == 'gitrebase'
+        " return
+    " endif
 
-		NERDTree
+		" NERDTree
 
-endfunction
+" endfunction
