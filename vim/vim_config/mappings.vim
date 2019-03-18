@@ -20,7 +20,6 @@ nnoremap <Enter> :w<Enter>
 nnoremap <leader>q :bw<Enter>
 "nnoremap <leader>q :Bclose<Enter>
 nnoremap <leader>a :qa<Enter>
-nnoremap <leader>r :edit<Enter>
 nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>

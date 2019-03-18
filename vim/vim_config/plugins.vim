@@ -9,6 +9,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'simeji/winresizer'
+Plugin 'wesQ3/vim-windowswap'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-rooter'
