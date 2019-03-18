@@ -5,7 +5,7 @@ let g:ale_lint_delay = 300
 let g:ale_sign_column_always = 1
 let b:ale_fixers = {'javascript': ['prettier', 'eslint'], 'ruby': ['rubocop']}
 let g:ale_lint_on_enter = 1
-let g:ale_fix_on_save = 1
+" let g:ale_fix_on_save = 1
 let g:ale_completion_enabled = 1
 
 " Set this. Airline will handle the rest.
