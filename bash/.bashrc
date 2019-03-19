@@ -146,6 +146,10 @@ if [ -f ~/.bash_aliases_work ]; then
     . ~/.bash_aliases_work
 fi
 
+if [ -f ~/.bash_machine ]; then
+    . ~/.bash_machine
+fi
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
@@ -213,3 +217,6 @@ function parse_git_dirty {
 export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\]$\[\e[m\] "
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+# export PATH="$PATH:$HOME/.rvm/bin"
