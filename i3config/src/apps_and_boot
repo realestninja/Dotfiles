@@ -22,6 +22,7 @@ for_window [class="Spotify"] move to workspace 3
 # exec --no-startup-id blueman-applet
 
 exec --no-startup-id devmon
+exec --no-startup-id unclutter
 
 # bmenu (Manjaro)
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
