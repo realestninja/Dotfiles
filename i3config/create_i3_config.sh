@@ -24,7 +24,6 @@ system_power_mode
 apps_and_boot
 manjaro_defaults
 autolock
-multimonitor
 )
 
 rm $config
@@ -34,3 +33,8 @@ for filename in "${srcfiles[@]}"
 do
   cat $srcpath/$filename >> $config
 done
+
+if [ "$MACHINE" == "WORK" ]
+then
+	cat $srcpath/multimonitor >> $config
+fi

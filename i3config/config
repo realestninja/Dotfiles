@@ -321,6 +321,7 @@ for_window [class="Spotify"] move to workspace 3
 # exec --no-startup-id blueman-applet
 
 exec --no-startup-id devmon
+exec --no-startup-id unclutter
 
 # bmenu (Manjaro)
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
@@ -459,3 +460,7 @@ set_from_resource $term_color15    color15
   client.background       #2B2C2B
 
 exec --no-startup-id xautolock -corners 0-0- -cornersize 30 -time 10 -locker blurlock
+# xrandr
+
+xrandr --output eDP1 --auto --output DP3 --auto --left-of eDP1
+# xrandr --output eDP1 --auto --output DP3 --auto --right-of eDP1
