@@ -4,3 +4,5 @@ no -> activate and search for current word
 
 
 fzf -> show history when called
+
+change emmet mapping
