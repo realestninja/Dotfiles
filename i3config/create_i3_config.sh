@@ -10,6 +10,7 @@ set-modkey
 focus_wrapping
 font
 i3-gaps
+i3-colors
 polybar
 compton
 background-image
