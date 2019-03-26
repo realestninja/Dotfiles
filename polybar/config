@@ -103,10 +103,10 @@ blacklist-0 = num lock
 
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
+;format-prefix-underline = ${colors.secondary}
 
 label-layout = %layout%
-label-layout-underline = ${colors.secondary}
+;label-layout-underline = ${colors.secondary}
 
 label-indicator-padding = 2
 label-indicator-margin = 1
@@ -216,7 +216,7 @@ type = internal/cpu
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${solarized.base1}
+;format-underline = ${solarized.base1}
 label =  %percentage%% 
 
 [module/memory]
@@ -224,7 +224,7 @@ type = internal/memory
 interval = 2
 format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${solarized.magenta}
+;format-underline = ${solarized.magenta}
 label =  %percentage_used%% 
 
 [module/wlan]
@@ -274,7 +274,7 @@ time =  %H:%M
 
 format-prefix = 
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = ${solarized.blue}
+;format-underline = ${solarized.blue}
 
 label = " %date% - %time% "
 
@@ -307,7 +307,7 @@ format-charging = <animation-charging> <label-charging> 
 format-charging-underline = ${solarized.cyan}
 
 format-discharging = <ramp-capacity> <label-discharging> 
-format-discharging-underline = ${self.format-charging-underline}
+;format-discharging-underline = ${self.format-charging-underline}
 
 format-full-prefix = "  "
 format-full-prefix-foreground = ${colors.foreground-alt}
@@ -330,7 +330,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = ${solarized.red}
+;format-underline = ${solarized.red}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
