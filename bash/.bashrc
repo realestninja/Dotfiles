@@ -150,6 +150,10 @@ if [ -f ~/.bash_machine ]; then
     . ~/.bash_machine
 fi
 
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 xhost +local:root > /dev/null 2>&1
 
 complete -cf sudo
