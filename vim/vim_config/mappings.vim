@@ -17,6 +17,9 @@ nnoremap _ kddpk
 nnoremap <leader>- o<Esc>jkk
 nnoremap <leader>_ O<Esc>j
 
+" add empty line above
+nnoremap <leader>- O<Esc>j
+
 nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
 nnoremap <leader><Enter> :w !sudo tee %<Enter>
