@@ -13,6 +13,9 @@ nnoremap <leader><Backspace> <C-w>q<Enter>
 nnoremap - kddpk
 nnoremap _ ddpkj
 
+" add empty line above
+nnoremap <leader>- O<Esc>j
+
 nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
 nnoremap <leader><Enter> :w !sudo tee %<Enter>
