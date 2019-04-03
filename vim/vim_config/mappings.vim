@@ -15,6 +15,7 @@ nnoremap _ ddpkj
 
 nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
+nnoremap <leader><Enter> :w !sudo tee %<Enter>
 
 "nnoremap <leader>q :q<Enter>
 nnoremap <leader>q :bw<Enter>
