@@ -20,7 +20,6 @@ alias reload-bashrc='source ~/.bashrc'
 alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
 
-alias k='nohup kitty&'
 alias g='git'
 alias update='sudo pacman -Syyu && yay -Syyu'
 
