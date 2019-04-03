@@ -2,7 +2,6 @@
 
 syntax on
 set shell=bash
-set cursorcolumn
 set number relativenumber
 set nowrap
 set clipboard=unnamedplus
