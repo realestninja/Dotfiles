@@ -23,3 +23,5 @@ alias Code='cd ~/Code'
 alias k='nohup kitty&'
 alias g='git'
 alias update='sudo pacman -Syyu && yay -Syyu'
+
+alias toClipboard='xclip -selection clipboard'
