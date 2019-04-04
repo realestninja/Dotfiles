@@ -9,6 +9,7 @@
 	cv = commit -v
 	cm = commit -m
 	ca = commit --amend
+	chp = cherry-pick
 	co = checkout
 	cob = checkout -b
 	cc = checkout -- .
