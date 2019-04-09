@@ -361,3 +361,5 @@ type = custom/script
 exec = ~/Dotfiles/polybar/modules/player-mpris-tail/player-mpris-tail.py
 tail = true
 click-left = playerctl play-pause
+click-middle= playerctl next
+click-right= playerctl previous
