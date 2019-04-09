@@ -26,3 +26,7 @@ alias update='sudo pacman -Syyu && yay -Syyu'
 alias toClipboard='xclip -selection clipboard'
 
 alias gpuVendor='glxinfo | grep "server glx vendor string"'
+
+function toPng {
+	mogrify -format png $1
+}
