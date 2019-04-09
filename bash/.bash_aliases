@@ -30,3 +30,5 @@ alias gpuVendor='glxinfo | grep "server glx vendor string"'
 function toPng {
 	mogrify -format png $1
 }
+
+alias lockscreen='i3lock -i ~/Pictures/Lockscreen/lockscreen.png -t'
