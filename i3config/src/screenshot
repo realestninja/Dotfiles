@@ -1,9 +1,10 @@
 # take screenshot
-bindsym $mod+F12 exec "scrot 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Fullscreen'"
+# bindsym $mod+F12 exec "scrot 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Fullscreen'"
+bindsym $mod+F12 exec "flameshot screen -r -p ~/Pictures/Screenshots"
 
 # take screenshot of active window
 bindsym $mod+F11 exec "scrot -u 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Current Window'"
 
-# to do: screenshot mode -> h j k l
-# rectangle screenshot
-# 1 display screenshot
+# take screenshot of rectangle
+bindsym $mod+Shift+F11 exec "flameshot gui -p ~/Pictures/Screenshots"
+
