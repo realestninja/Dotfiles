@@ -1,0 +1,15 @@
+# workspace cycler
+bindsym $mod+n mode "workspace_cycler"
+
+mode "workspace_cycler" {
+	bindsym h workspace prev
+	bindsym j workspace prev
+	bindsym k workspace next
+	bindsym l workspace next
+
+  bindsym q mode "default"
+  bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym $mod+n mode "default"
+}
+
