@@ -40,7 +40,7 @@ base2 = #eee8d5
 base3 = #fdf6e3
 
 [bar/bar1]
-;monitor = ${env:MONITOR:HDMI-1}
+;monitor = ${env:MONITOR:}
 width = 100%
 height = 45
 ;offset-x = 1%
