@@ -1,4 +1,4 @@
 # xrandr
 
-exec xrandr --output eDP1 --auto --output DP3 --auto --left-of eDP1
+# exec xrandr --output eDP1 --auto --output DP3 --auto --left-of eDP1
 # xrandr --output eDP1 --auto --output DP3 --auto --right-of eDP1

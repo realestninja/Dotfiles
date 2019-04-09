@@ -262,9 +262,12 @@ exec --no-startup-id xinput --set-prop 11 "Synaptics Two-Finger Scrolling" 1 1
 # take screenshot
 bindsym $mod+F12 exec "scrot 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Fullscreen'"
 
-# take screenshot of current window
+# take screenshot of active window
 bindsym $mod+F11 exec "scrot -u 'i3_screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f ~/Pictures/Screenshots' && notify-send 'Screenshot: Current Window'"
 
+# to do: screenshot mode -> h j k l
+# rectangle screenshot
+# 1 display screenshot
 # media keys / volume control etc.
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
