@@ -56,7 +56,7 @@ nnoremap <leader>tw :setlocal wrap!<Enter>
 map <leader>ln :setlocal relativenumber!<Enter>
 
 " toggle cursorcolumn
-nnoremap <leader>cc :set cursorcolumn!<Enter>
+nnoremap <leader>tc :set cursorcolumn!<Enter>
 
 " Replace all occurences
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
