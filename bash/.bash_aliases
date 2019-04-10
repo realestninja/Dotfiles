@@ -27,8 +27,6 @@ alias toClipboard='xclip -selection clipboard'
 
 alias gpuVendor='glxinfo | grep "server glx vendor string"'
 
-alias lockscreen='i3lock -i ~/Pictures/Lockscreen/lockscreen.png -t'
-
 function toPng {
 	mogrify -format png $1
 }
