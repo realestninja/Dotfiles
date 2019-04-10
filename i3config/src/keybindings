@@ -107,7 +107,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lock screen (Manjaro)
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec lockscreen
 
 # hide/unhide i3status bar (Manjaro)
 # bindsym $mod+m bar mode toggle

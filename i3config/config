@@ -241,7 +241,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Lock screen (Manjaro)
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec lockscreen
 
 # hide/unhide i3status bar (Manjaro)
 # bindsym $mod+m bar mode toggle
@@ -307,13 +307,14 @@ mode "$mode_system" {
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
+    # exit system mode: "Enter", "Space" or "Escape"
     bindsym Return mode "default"
+		bindsym space mode "default"
     bindsym Escape mode "default"
 }
 
 # set $nautilus nautilus --no-desktop
-set $chrome "google-chrome-stable --force-device-scale-factor=2 %U"
+set $chrome "google-chrome-stable --force-device-scale-factor=1.5 %U"
 set $telegram telegram-desktop
 set $spotify spotify -force-device-scale-factor=2
 
@@ -463,7 +464,7 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-exec --no-startup-id xautolock -corners 0-0- -cornersize 30 -time 10 -locker blurlock
+exec --no-startup-id xautolock -corners 0-0- -cornersize 30 -time 10 -locker lockscreen
 
 # workspace cycler
 bindsym $mod+n mode "workspace_cycler"
