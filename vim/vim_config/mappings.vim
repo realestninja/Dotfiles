@@ -3,11 +3,11 @@ let mapleader = ","
 " jj to leave insertmode
 imap jj <Esc>
 
-" Close buffer but keep split
-nnoremap <Backspace> :bp\|bd \#<Enter>
-
 " Close split but keep buffer
-nnoremap <leader><Backspace> <C-w>q<Enter>
+nnoremap <Backspace> <C-w>q<Enter>
+
+" Close buffer but keep split
+nnoremap <leader><Backspace> :bp\|bd \#<Enter>
 
 " swap lines
 nnoremap - kddpk
