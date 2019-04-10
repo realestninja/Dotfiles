@@ -64,8 +64,8 @@ Plugin 'danielwe/base16-vim'
 Plugin 'junegunn/goyo.vim'
 
 " Plugin 'honza/vim-snippets'
-Plugin 'epilande/vim-react-snippets'
 Plugin 'SirVer/ultisnips'
+Plugin 'realestninja/vim-react-snippets'
 
 " MP
 Plugin 'editorconfig/editorconfig-vim'
