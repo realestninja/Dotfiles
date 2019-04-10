@@ -10,8 +10,9 @@ mode "$mode_system" {
     bindsym r exec --no-startup-id i3exit reboot, mode "default"
     bindsym Shift+s exec --no-startup-id i3exit shutdown, mode "default"
 
-    # exit system mode: "Enter" or "Escape"
+    # exit system mode: "Enter", "Space" or "Escape"
     bindsym Return mode "default"
+		bindsym space mode "default"
     bindsym Escape mode "default"
 }
 

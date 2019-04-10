@@ -9,6 +9,7 @@ mode "workspace_cycler" {
 
   bindsym q mode "default"
   bindsym Escape mode "default"
+  bindsym space mode "default"
   bindsym Return mode "default"
   bindsym $mod+n mode "default"
 }

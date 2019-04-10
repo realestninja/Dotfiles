@@ -65,6 +65,7 @@ mode "gaps_mode" {
   bindsym Escape mode "default"
   bindsym Return mode "default"
   bindsym $mod+n mode "default"
+  bindsym space mode "default"
 }
 
 # Smart gaps (gaps used if only more than one container on the workspace)
@@ -475,6 +476,7 @@ mode "workspace_cycler" {
 
   bindsym q mode "default"
   bindsym Escape mode "default"
+  bindsym space mode "default"
   bindsym Return mode "default"
   bindsym $mod+n mode "default"
 }
