@@ -142,12 +142,14 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_aliases_work ]; then
-    . ~/.bash_aliases_work
-fi
-
 if [ -f ~/.bash_machine ]; then
     . ~/.bash_machine
+fi
+
+if [ "${MACHINE}" = "WORK" ]; then
+	if [ -f ~/.bash_aliases_work ]; then
+	    . ~/.bash_aliases_work
+	fi
 fi
 
 if [ -f ~/.git-completion.bash ]; then
