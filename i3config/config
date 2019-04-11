@@ -143,7 +143,8 @@ bindsym $mod+Shift+q kill
 bindsym $mod+BackSpace kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -fn 'Inconsolata Nerd Font-20'
+# bindsym $mod+d exec dmenu_run -fn 'Inconsolata Nerd Font-26'
+bindsym $mod+d exec runDmenu
 
 # start program launcher
 # bindsym $mod+d exec --no-startup-id dmenu_recency 'Inconsolata Nerd Font-20'
