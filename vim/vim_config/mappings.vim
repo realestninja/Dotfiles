@@ -10,8 +10,8 @@ nnoremap <Backspace> <C-w>q<Enter>
 nnoremap <leader><Backspace> :bp\|bd \#<Enter>
 
 " swap lines
-nnoremap - kddpk
-nnoremap _ ddpkj
+nnoremap - ddpkj
+nnoremap _ kddpk
 
 " add empty line above
 nnoremap <leader>- O<Esc>j
