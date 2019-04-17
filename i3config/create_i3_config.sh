@@ -37,5 +37,5 @@ done
 
 if [ "$MACHINE" == "WORK" ]
 then
-	cat $srcpath/multimonitor >> $config
+	# cat $srcpath/multimonitor >> $config
 fi
