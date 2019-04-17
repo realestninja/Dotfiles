@@ -67,13 +67,14 @@ font-0 = "MesloLGM Nerd Font:size=18:weight=regular;2"
 ;font-0 = "FuraMono Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Inconsolata Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Fantasque Sans Mono:pixelsize=14;3"
-font-1 = "Iosevka Nerd Font:pixelsize=14;3"
+;font-1 = "Iosevka Nerd Font:pixelsize=14;3"
+font-1 = "MesloLGM Nerd Font:size=14;3"
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = monospace:pixelsize=10;1
 
 modules-left = i3
 modules-center = player-mpris-tail
-modules-right = temperature cpu memory filesystem battery date
+modules-right = temperature cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
@@ -304,24 +305,18 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging> 
-format-charging-underline = ${solarized.cyan}
 
 format-discharging = <ramp-capacity> <label-discharging> 
-;format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = "  "
-format-full-prefix-foreground = ${colors.foreground-alt}
-format-full-underline = ${self.format-charging-underline}
+format-full-prefix = " "
+ramp-capacity-0 =" "
+ramp-capacity-1 = " "
+ramp-capacity-2 = " "
 
-ramp-capacity-0 =  
-ramp-capacity-1 =  
-ramp-capacity-2 =  
-ramp-capacity-foreground = ${colors.foreground-alt}
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
 
-animation-charging-0 =  
-animation-charging-1 =  
-animation-charging-2 =  
-animation-charging-foreground = ${colors.foreground-alt}
 animation-charging-framerate = 750
 
 [module/temperature]
@@ -338,9 +333,9 @@ label = %temperature% 
 label-warn = %temperature% 
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [settings]
@@ -363,3 +358,26 @@ tail = true
 click-left = playerctl play-pause
 click-middle= playerctl next
 click-right= playerctl previous
+
+[module/pulseaudio]
+type = internal/pulseaudio
+
+; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
+; If not, uses default sink
+sink = alsa_output.pci-0000_12_00.3.analog-stereo
+
+; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
+; Default: true
+use-ui-max = true
+
+; Interval for volume increase/decrease (in percent points)
+; Default: 5
+interval = 5
+format-volume = <ramp-volume> <label-volume>
+label-muted = 
+ramp-volume-0 = 🔈
+ramp-volume-1 = 🔉
+ramp-volume-2 = 🔊
+;ramp-volume-0 = Volume
+;ramp-volume-1 = Volume
+;ramp-volume-2 = Volume
