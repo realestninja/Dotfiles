@@ -274,7 +274,12 @@ bindsym $mod+Shift+F11 exec "flameshot gui -p ~/Pictures/Screenshots"
 # media keys / volume control etc.
 bindsym XF86AudioRaiseVolume exec "amixer -D pulse sset Master 5%+"
 bindsym XF86AudioLowerVolume exec "amixer -D pulse sset Master 5%-"
-bindsym XF86AudioMute exec pactl set-sink-mute 10 toggle # 'pactl list sinks' to get sink number
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # 'pactl list sinks' to get sink number
+
+# media keys / Pause, Play, Next, Prev
+bindsym XF86AudioPlay exec "playerctl play-pause "
+bindsym XF86AudioNext exec "playerctl next"
+bindsym XF86AudioPrev exec "playerctl previous "
 
 # change brightness
 bindsym XF86MonBrightnessUp exec "light -A 10"
