@@ -146,7 +146,7 @@ if [ -f ~/.bash_machine ]; then
     . ~/.bash_machine
 fi
 
-if [ "${MACHINE}" = "WORK" ]; then
+if [ "${MACHINE}" == "WORK" ]; then
 	if [ -f ~/.bash_aliases_work ]; then
 	    . ~/.bash_aliases_work
 	fi
@@ -232,5 +232,13 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-# export PATH="$PATH:$HOME/.rvm/bin"
+
+if [ "${MACHINE}" == "WORK" ]; then
+	export NVM_DIR="$HOME/.nvm"
+	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+	[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+	PATH=$HOME/perm/passenger-6.0.2/bin:$PATH
+	export PATH
+fi
+
