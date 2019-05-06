@@ -60,6 +60,7 @@ nnoremap <leader>tc :set cursorcolumn!<Enter>
 
 " Replace all occurences
 vnoremap <C-r> "hy:%s/<C-r>h//g<left><left>
+vnoremap <leader><C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 
 " Autocompletion
 " use built in -> insertmode: CTRL+X -> CTRL+I
