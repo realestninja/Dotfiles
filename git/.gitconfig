@@ -18,6 +18,7 @@
 	ds = diff --staged
 	dsn = diff --staged --name-only
 	fo = fetch origin
+	l = log
 	ps = push origin HEAD
 	pl = pull
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
