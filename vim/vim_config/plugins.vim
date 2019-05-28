@@ -73,6 +73,8 @@ Plugin 'styled-components/vim-styled-components'
 
 Plugin 'ryanoasis/vim-devicons'
 
+Plugin 'mboughaba/i3config.vim'
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 filetype plugin on

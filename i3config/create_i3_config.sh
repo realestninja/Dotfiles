@@ -1,8 +1,9 @@
 #!/bin/bash
 
 folderpath=$HOME"/Dotfiles/i3config/"
-srcpath=$folderpath"src/"
-config=$folderpath"config"
+srcpath=$folderpath"src"
+filetype=".i3.config"
+config="$folderpath/i3.config"
 
 srcfiles=(
 header
@@ -32,10 +33,10 @@ touch $config
 
 for filename in "${srcfiles[@]}"
 do
-  cat $srcpath/$filename >> $config
+  cat "$srcpath/$filename.i3.config" >> $config
 done
 
 if [ "$MACHINE" == "WORK" ]
 then
-	cat $srcpath/work_related >> $config
+	cat $srcpath/work_related.i3.config >> $config
 fi
