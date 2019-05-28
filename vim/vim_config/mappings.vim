@@ -13,8 +13,9 @@ nnoremap <leader><Backspace> :bp\|bd \#<Enter>
 nnoremap - ddpkj
 nnoremap _ kddpk
 
-" add empty line above
-nnoremap <leader>- O<Esc>j
+" insert empty line above
+nnoremap <leader>- o<Esc>jkk
+nnoremap <leader>_ O<Esc>j
 
 nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
