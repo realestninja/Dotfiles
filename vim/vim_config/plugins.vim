@@ -46,7 +46,7 @@ Plugin 'mxw/vim-jsx'
 
 " Plugin 'MaxMEllon/vim-jsx-pretty'
 " Plugin 'mgechev/vim-jsx'
-" Plugin 'leafgarland/typescript-vim'
+Plugin 'leafgarland/typescript-vim'
 
 Plugin 'w0rp/ale'
 " Plugin 'Shougo/deoplete.nvim'
