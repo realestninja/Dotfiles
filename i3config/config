@@ -354,15 +354,6 @@ bindsym $mod+F4 exec $spotify
 for_window [class="TelegramDesktop"] move to workspace 3
 for_window [class="Spotify"] move to workspace 3
 
-# autostart apps
-# exec $telegram
-# exec i3-sensible-terminal
-# exec i3-msg workspace 2
-# exec $chrome
-# exec $spotify
-# exec --no-startup-id nm-applet
-# exec --no-startup-id blueman-applet
-
 exec --no-startup-id devmon
 exec --no-startup-id unclutter
 
@@ -383,35 +374,6 @@ exec --no-startup-id clipit
 # exec --no-startup-id start_conky_green
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
-
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-# bar {
-	# i3bar_command i3bar
-	# status_command i3status
-	# position bottom
-
-# ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-# #	tray_output primary
-# #	tray_output eDP1
-
-	# bindsym button4 nop
-	# bindsym button5 nop
-# #   font xft:URWGothic-Book 11
-	# strip_workspace_numbers yes
-
-    # colors {
-        # background #222D31
-        # statusline #F9FAF9
-        # separator  #454947
-
-# #                      border  backgr. text
-        # focused_workspace  #F9FAF9 #16a085 #292F34
-        # active_workspace   #595B5B #353836 #FDF6E3
-        # inactive_workspace #595B5B #222D31 #EEE8D5
-        # binding_mode       #16a085 #2C2C2C #F9FAF9
-        # urgent_workspace   #16a085 #FDF6E3 #E5201D
-    # }
-# }
 
 ################################################################################################
 ## sound-section - DO NOT EDIT if you wish to automatically upgrade Alsa -> Pulseaudio later! ##
@@ -492,4 +454,6 @@ set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
 exec --no-startup-id xautolock -corners 0-0- -cornersize 30 -time 10 -locker lockscreen
+
+bindsym $mod+F5 exec slack
 
