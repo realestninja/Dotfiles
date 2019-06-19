@@ -17,8 +17,8 @@ nnoremap _ kddpk
 nnoremap <leader>- o<Esc>jkk
 nnoremap <leader>_ O<Esc>j
 
-nnoremap <leader>w :w<Enter>:edit<Enter>
-nnoremap <Enter> :w<Enter>:edit<Enter>
+nnoremap <leader>w :w<Enter>
+nnoremap <Enter> :w<Enter>
 nnoremap <leader><Enter> :w !sudo tee %<Enter>
 
 "nnoremap <leader>q :q<Enter>
@@ -66,6 +66,7 @@ vnoremap <leader><C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 " Autocompletion
 " use built in -> insertmode: CTRL+X -> CTRL+I
 
-vnoremap ++ y/<C-R>"<CR>
+" vnoremap ++ y/<C-R>"<CR>
 
+" Highlight + search current word
 noremap * *N:set hlsearch<Enter>
