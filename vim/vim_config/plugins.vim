@@ -53,7 +53,9 @@ Plugin 'w0rp/ale'
 " Plugin 'ternjs/tern_for_vim'
 Plugin 'carlitux/deoplete-ternjs'
 
-Plugin 'craigemery/vim-autotag'
+" Plugin 'craigemery/vim-autotag'
+Plugin 'ludovicchabant/vim-gutentags'
+Plugin 'kristijanhusak/vim-js-file-import', {'do': 'npm install'}
 
 " Plugin 'Shougo/vimproc.vim'
 " Plugin 'Valloric/YouCompleteMe'
