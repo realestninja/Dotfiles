@@ -17,8 +17,8 @@ nnoremap _ kddpk
 nnoremap <leader>- o<Esc>jkk
 nnoremap <leader>_ O<Esc>j
 
-nnoremap <leader>w :w<Enter>
-nnoremap <Enter> :w<Enter>
+nnoremap <leader>w :w<Enter>:edit<Enter>
+nnoremap <Enter> :w<Enter>:edit<Enter>
 nnoremap <leader><Enter> :w !sudo tee %<Enter>
 
 "nnoremap <leader>q :q<Enter>
