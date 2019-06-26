@@ -68,6 +68,7 @@ Plugin 'junegunn/goyo.vim'
 " Plugin 'honza/vim-snippets'
 Plugin 'SirVer/ultisnips'
 Plugin 'realestninja/vim-react-snippets'
+Plugin 'epilande/vim-es2015-snippets'
 
 " MP
 Plugin 'editorconfig/editorconfig-vim'
