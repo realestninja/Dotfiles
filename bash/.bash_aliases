@@ -42,3 +42,7 @@ function displaySideBySide {
 function displayMirror {
 	xrandr --output $1 --auto --output $2 --auto --same-as $1
 }
+
+function grepHistory {
+	history | grep $1
+}

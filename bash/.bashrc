@@ -232,7 +232,6 @@ export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] \[\e[31m\
 
 export FZF_DEFAULT_COMMAND='ag -g ""'
 
-
 if [ "${MACHINE}" == "WORK" ]; then
 	export NVM_DIR="$HOME/.nvm"
 	[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
