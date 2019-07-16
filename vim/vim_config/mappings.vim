@@ -70,3 +70,6 @@ vnoremap <leader><C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 
 " Highlight + search current word
 noremap * *N:set hlsearch<Enter>
+
+" Regular Ctrl + v pasting in insert mode instead of Ctrl + Shift + v
+inoremap <silent> <C-v> <C-R>"
