@@ -1,8 +1,13 @@
 *.swp
 *.swo
 */.git
-fonts/.uuid
-mp_zsh
-git/user.gitconfig
-bash/.bash_aliases_work
 tags
+
+fonts/.uuid
+
+git/user.gitconfig
+
+bash/.bash_aliases_work
+bash/.bash_machine
+
+i3config/i3.config
