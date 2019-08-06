@@ -27,8 +27,12 @@ alias toClipboard='xclip -selection clipboard'
 
 alias gpuVendor='glxinfo | grep "server glx vendor string"'
 
-function toPng {
+function toPNG {
 	mogrify -format png $1
+}
+
+function toJPG {
+	mogrify -format jpg $1
 }
 
 function displayOff {
