@@ -11,8 +11,6 @@ Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'simeji/winresizer'
 Plugin 'wesQ3/vim-windowswap'
 
-Plugin 'realestninja/vim-startify'
-
 Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-rooter'
 
