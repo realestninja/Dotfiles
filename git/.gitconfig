@@ -20,6 +20,7 @@
 	fo = fetch origin
 	l = log
 	ps = push origin HEAD
+	pst = push --tags
 	pl = pull --rebase
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
 	s = status
