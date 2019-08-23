@@ -39,14 +39,6 @@ function displayOff {
 	xrandr --output $1 --off
 }
 
-function displaySideBySide {
-	xrandr --output $1 --auto --output $2 --auto --left-of $1
-}
-
-function displayMirror {
-	xrandr --output $1 --auto --output $2 --auto --same-as $1
-}
-
-function grephistory {
+function historyGrep {
 	history | grep $1
 }
