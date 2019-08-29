@@ -32,6 +32,8 @@ nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>e :e<Enter>
 
+nnoremap <leader>mks :mks!<Enter>
+
 " center current line
 nnoremap <leader>. z.
 

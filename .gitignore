@@ -11,3 +11,5 @@ bash/.bash_aliases_work
 bash/.bash_machine
 
 i3config/i3.config
+
+Session.vim
