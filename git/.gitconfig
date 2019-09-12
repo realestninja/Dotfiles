@@ -15,6 +15,7 @@
 	cc = checkout -- .
 	cnt = rev-list --count	# example: git rev-list --count master..HEAD
 	d = diff
+	dl = diff HEAD~1..HEAD
 	ds = diff --staged
 	dsn = diff --staged --name-only
 	fo = fetch origin
