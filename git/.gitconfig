@@ -26,6 +26,7 @@
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
 	rba = rebase --abort
 	rbc = rebase --continue
+	rbs = rebase --skip
 	s = status
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
