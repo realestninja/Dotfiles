@@ -26,6 +26,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-speeddating'
 Plugin 'terryma/vim-expand-region'
 
 Plugin 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
