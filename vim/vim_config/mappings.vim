@@ -40,7 +40,6 @@ nnoremap <leader>. z.
 " buffer cycling
 nnoremap <Tab> :bnext<CR>
 nnoremap <S-Tab> :bprevious<CR>
-nnoremap <leader>bb :buffers<Enter>
 
 " join lines
 nnoremap gJ gJdw
