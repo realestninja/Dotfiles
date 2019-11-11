@@ -49,6 +49,9 @@ Plugin 'mxw/vim-jsx'
 " Plugin 'mgechev/vim-jsx'
 Plugin 'leafgarland/typescript-vim'
 
+" Plugin 'neoclide/coc.nvim', {'branch': 'release'}"
+" requires :call coc#util#install()
+
 Plugin 'w0rp/ale'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'ternjs/tern_for_vim'
