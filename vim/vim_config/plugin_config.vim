@@ -11,7 +11,6 @@ source $HOME/Dotfiles/vim/vim_config/plugin_config/expand.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/fugitive.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/fzf.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/goyo.vim
-" source $HOME/Dotfiles/vim/vim_config/plugin_config/gitgutter.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/ultisnips.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/nerdfonts.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/winresizer.vim
