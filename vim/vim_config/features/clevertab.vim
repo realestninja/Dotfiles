@@ -1,20 +1,15 @@
 " clevertabs
 
-function! CleverTab()
+function! CleverTab(downwards)
 	if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
 		return "\<Tab>"
 	else
-		return "\<C-N>"
+		if (a:downwards == 1)
+			return "\<C-N>"
+		else
+			return "\<C-P>"
 	endif
 endfunction
 
-function! CleverTabInverse()
-	if strpart( getline('.'), 0, col('.')-1 ) =~ '^\s*$'
-		return "\<Tab>"
-	else
-		return "\<C-P>"
-	endif
-endfunction
-
-inoremap <Tab> <C-R>=CleverTab()<CR>
-inoremap <S-Tab> <C-R>=CleverTabInverse()<CR>
+inoremap <Tab> <C-R>=CleverTab(1)<CR>
+inoremap <S-Tab> <C-R>=CleverTab(0)<CR>
