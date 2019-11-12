@@ -9,7 +9,8 @@
 * Install [the silver searcher](https://github.com/ggreer/the_silver_searcher)
 * Install [ctags](http://ctags.sourceforge.net/)
 * Sass linting needs global install of sass-lint (`npm i -g sass-lint`)
-* vimproc needs to be compiled after downloading.
+* Coc needs a setting file to be placed or symlinked in ~/.vim
+* Coc post-installation: `:CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css`
 
 ## Preview:
 

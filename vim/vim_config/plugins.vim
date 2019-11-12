@@ -55,7 +55,7 @@ Plugin 'neoclide/coc.nvim', {'branch': 'release'}"
 Plugin 'w0rp/ale'
 " Plugin 'Shougo/deoplete.nvim'
 " Plugin 'ternjs/tern_for_vim'
-Plugin 'carlitux/deoplete-ternjs'
+" Plugin 'carlitux/deoplete-ternjs'
 
 " Plugin 'craigemery/vim-autotag'
 Plugin 'ludovicchabant/vim-gutentags'
