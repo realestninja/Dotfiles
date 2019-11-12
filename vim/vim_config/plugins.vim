@@ -21,7 +21,7 @@ Plugin 'airblade/vim-gitgutter'
 " Plugin 'Shutnik/jshint2.vim'
 " Plugin 'othree/javascript-libraries-syntax.vim'
 
-Plugin 'scrooloose/nerdcommenter'
+Plugin 'realestninja/nerdcommenter'
 
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'kien/rainbow_parentheses.vim'
