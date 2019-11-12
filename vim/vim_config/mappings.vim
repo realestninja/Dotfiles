@@ -71,8 +71,6 @@ vnoremap <leader><C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 " Autocompletion
 " use built in -> insertmode: CTRL+X -> CTRL+I
 
-" vnoremap ++ y/<C-R>"<CR>
-
 " Highlight + search current word
 noremap * *N:set hlsearch<Enter>
 
