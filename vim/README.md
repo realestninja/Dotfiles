@@ -10,7 +10,8 @@
 * Install [ctags](http://ctags.sourceforge.net/)
 * Sass linting needs global install of sass-lint (`npm i -g sass-lint`)
 * Coc needs a setting file to be placed or symlinked in ~/.vim
-* Coc post-installation: `:CocInstall coc-tsserver coc-eslint coc-json coc-prettier coc-css`
+* Coc post-installation: `:call coc#util#install()`
+* Coc post-installation: `:CocInstall coc-tsserver coc-eslint coc-json coc-css`
 
 ## Preview:
 
