@@ -3,7 +3,7 @@
 [pull]
 	rebase = true
 [alias]
-	aa = add -A
+	A = add -A
 	ap = add -p
 	c = commit -v
 	cv = commit -v
@@ -20,6 +20,7 @@
 	dsn = diff --staged --name-only
 	fo = fetch origin
 	l = log
+	ll = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	ps = push origin HEAD
 	pst = push --tags
 	pl = pull --rebase
