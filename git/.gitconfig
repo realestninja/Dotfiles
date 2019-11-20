@@ -29,6 +29,7 @@
 	rbc = rebase --continue
 	rbs = rebase --skip
 	s = status
+	us = reset HEAD
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
