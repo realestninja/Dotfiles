@@ -9,6 +9,7 @@
 	cv = commit -v
 	cm = commit -m
 	ca = commit --amend
+	cane = commit --amend --no-edit
 	chp = cherry-pick
 	co = checkout
 	cob = checkout -b
@@ -22,6 +23,7 @@
 	l = log
 	ll = log --color --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an> %Cgreen(%cr)%Creset%C(yellow)%d%Creset %s ' --abbrev-commit
 	ps = push origin HEAD
+	psfl = push origin HEAD --force-with-lease
 	pst = push --tags
 	pl = pull --rebase
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
@@ -29,7 +31,7 @@
 	rbc = rebase --continue
 	rbs = rebase --skip
 	s = status
-	us = reset HEAD
+	us = reset HEAD # unstage everything
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 [color]
