@@ -9,6 +9,7 @@ set foldmethod=manual
 set encoding=UTF-8
 set splitbelow splitright
 set backspace=indent,eol,start
+set mouse=a
 
 autocmd ColorScheme * hi Normal ctermbg=NONE
 
