@@ -20,10 +20,10 @@
 	ds = diff --staged
 	dsn = diff --staged --name-only
 	fo = fetch origin
+	fwl = push origin HEAD --force-with-lease
 	l = log
 	ll = log --color --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an> %Cgreen(%cr)%Creset%C(yellow)%d%Creset %s ' --abbrev-commit
 	ps = push origin HEAD
-	psfl = push origin HEAD --force-with-lease
 	pst = push --tags
 	pl = pull --rebase
 	rb = rebase -i # example squash 9 commits: git rebase -i HEAD~9
