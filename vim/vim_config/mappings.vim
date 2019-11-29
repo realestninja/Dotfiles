@@ -72,7 +72,7 @@ vnoremap <leader><C-r> "hy:%s/<C-r>h/<C-r>h/g<left><left>
 " use built in -> insertmode: CTRL+X -> CTRL+I
 
 " Highlight + search current word
-noremap * *N:set hlsearch<Enter>
+nnoremap * :let @/ = '<c-r><c-w>' \| set hlsearch<cr>
 
 " Regular Ctrl + v pasting in insert mode instead of Ctrl + Shift + v
 inoremap <silent> <C-v> <C-R>"
