@@ -18,10 +18,6 @@ nnoremap _ kddpk
 
 " insert empty line above
 nnoremap <leader>- o<Esc>jkk
-nnoremap <leader>_ O<Esc>j
-
-" add empty line above
-nnoremap <leader>- O<Esc>j
 
 nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
