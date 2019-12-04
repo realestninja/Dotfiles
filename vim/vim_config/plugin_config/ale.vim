@@ -18,6 +18,8 @@ let g:ale_filetype_blacklist = ['nerdtree']
 let g:ale_cache_executable_check_failures = 1
 
 nnoremap <leader>ef :ALEFix eslint<Enter>
+nnoremap <leader>en :ALENext<Enter>
+nnoremap <leader>ep :ALEPrevious<Enter>
 
 let g:ale_sign_error = '•'
 let g:ale_sign_warning = '•'

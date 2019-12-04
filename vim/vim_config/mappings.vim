@@ -31,7 +31,7 @@ nnoremap <leader>cl :close<Enter>
 nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>vs :vsplit<Enter>
-nnoremap <leader>e :e<Enter>
+nnoremap <leader>ee :e<Enter>
 
 nnoremap <leader>mks :mks!<Enter>
 
@@ -50,7 +50,7 @@ nnoremap <leader>hs :set hlsearch!<Enter>
 
 " Reload .vimrc & install plugins
 nnoremap <leader>+ :so ~/.vimrc<Enter>
-nnoremap <leader>p :PluginInstall<Enter>
+" nnoremap <leader>p :PluginInstall<Enter>
 
 " edit mappings from anywhere
 nnoremap <leader>emap :split ~/Dotfiles/vim/vim_config/mappings.vim<Enter><Esc>
