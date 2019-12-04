@@ -36,6 +36,8 @@ Plugin 'mattn/emmet-vim'
 Plugin 'ap/vim-css-color'
 " Plugin 'csscomb/vim-csscomb'
 
+Plugin 'realestninja/vim-printer'
+
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 " Plugin 'tpope/vim-obsession'
