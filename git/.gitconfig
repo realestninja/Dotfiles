@@ -11,6 +11,7 @@
 	cm = commit -m
 	ca = commit --amend
 	cane = commit --amend --no-edit
+	canenv = commit --amend --no-edit --no-verify
 	chp = cherry-pick
 	co = checkout
 	cob = checkout -b
