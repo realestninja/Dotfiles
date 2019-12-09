@@ -31,7 +31,7 @@ nnoremap <leader>cl :close<Enter>
 nnoremap <leader>bw :bw<Left><Left>
 nnoremap <leader>bs :split<Enter>
 nnoremap <leader>vs :vsplit<Enter>
-nnoremap <leader>ee :e<Enter>
+nnoremap <leader>ee :edit!<Enter>
 
 nnoremap <leader>mks :mks!<Enter>
 
