@@ -79,6 +79,7 @@ Plugin 'jhkersul/vim-jest-snippets'
 " MP
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'styled-components/vim-styled-components'
+Plugin 'kchmck/vim-coffee-script'
 
 Plugin 'ryanoasis/vim-devicons'
 
