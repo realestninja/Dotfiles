@@ -46,3 +46,6 @@ endfunction
 
 " autocmd BufWritePre,FileWritePre *.css,*.less,*.scss,*.sass silent! :CSScomb
 " au BufRead,BufNewFile *.jsx set filetype=jsx
+
+" Remove underline from linenumber
+hi CursorLineNr  cterm=none
