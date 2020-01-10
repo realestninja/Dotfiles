@@ -76,3 +76,6 @@ nnoremap * :let @/ = '<c-r><c-w>' \| set hlsearch<cr>
 
 " Regular Ctrl + v pasting in insert mode instead of Ctrl + Shift + v
 inoremap <silent> <C-v> <C-R>"
+
+" Blackhole pasting
+vnoremap <leader>p "_dP
