@@ -13,6 +13,9 @@
 	cane = commit --amend --no-edit
 	canenv = commit --amend --no-edit --no-verify
 	chp = cherry-pick
+	chpa = cherry-pick --abort
+	chpc = cherry-pick --continue
+	chps = cherry-pick --skip
 	co = checkout
 	cob = checkout -b
 	cc = checkout -- .
