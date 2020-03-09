@@ -73,7 +73,8 @@ font-1 = "MesloLGM Nerd Font:size=14;3"
 font-2 = monospace:pixelsize=10;1
 
 modules-left = i3
-modules-center = player-mpris-tail
+;modules-center = player-mpris-tail
+modules-center = player-mpris-simple
 modules-right = temperature cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
@@ -351,14 +352,21 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-[module/player-mpris-tail]
+;[module/player-mpris-tail]
+;type = custom/script
+;exec = ~/Dotfiles/polybar/modules/player-mpris-tail/player-mpris-tail.py
+;tail = true
+;click-left = playerctl play-pause
+;click-middle= playerctl next
+;click-right= playerctl previous
+
+[module/player-mpris-simple]
 type = custom/script
-exec = ~/Dotfiles/polybar/modules/player-mpris-tail/player-mpris-tail.py
-tail = true
+exec = ~/Dotfiles/polybar/modules/player-mpris-simple/player-mpris-simple.sh
+interval = 1
 click-left = playerctl play-pause
 click-middle= playerctl next
 click-right= playerctl previous
-
 [module/pulseaudio]
 type = internal/pulseaudio
 
