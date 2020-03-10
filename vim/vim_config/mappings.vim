@@ -82,3 +82,6 @@ vnoremap <leader>p "_dP
 
 " Set filetype to json and apply correct formatting
 nnoremap =j :set ft=json<CR>:%!python -m json.tool<CR>
+
+" Sort like a boss
+vnoremap <C-s> :sort<CR>
