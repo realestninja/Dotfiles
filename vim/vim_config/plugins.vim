@@ -75,6 +75,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'realestninja/vim-react-snippets'
 Plugin 'epilande/vim-es2015-snippets'
 Plugin 'jhkersul/vim-jest-snippets'
+Plugin 'jparise/vim-graphql'
 
 " MP
 Plugin 'editorconfig/editorconfig-vim'
