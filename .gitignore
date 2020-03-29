@@ -13,3 +13,5 @@ bash/.bash_machine
 i3config/i3.config
 
 Session.vim
+
+**/__pycache__/*
