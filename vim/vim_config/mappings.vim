@@ -87,5 +87,5 @@ nnoremap =j :set ft=json<CR>:%!python -m json.tool<CR>
 vnoremap <C-s> :sort<CR>
 
 " Change layout -> vertical/horizontal
-nnoremap <silent> <leader>lh <C-w>t<C-w>K<CR>
+nnoremap <silent> <leader>lb <C-w>t<C-w>K<CR>
 nnoremap <silent> <leader>lv <C-w>t<C-w>H<CR>
