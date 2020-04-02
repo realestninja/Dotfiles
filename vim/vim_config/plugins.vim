@@ -17,7 +17,6 @@ Plugin 'airblade/vim-rooter'
 " Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
-Plugin 'Yggdroot/indentLine'
 
 " Plugin 'Shutnik/jshint2.vim'
 " Plugin 'othree/javascript-libraries-syntax.vim'

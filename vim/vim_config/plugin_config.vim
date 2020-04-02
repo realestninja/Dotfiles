@@ -15,4 +15,3 @@ source $HOME/Dotfiles/vim/vim_config/plugin_config/nerdfonts.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/winresizer.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/windowswap.vim
 source $HOME/Dotfiles/vim/vim_config/plugin_config/js-file-importer.vim
-source $HOME/Dotfiles/vim/vim_config/plugin_config/indentLine.vim
