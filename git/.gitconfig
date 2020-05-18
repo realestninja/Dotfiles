@@ -39,6 +39,7 @@
 	us = reset HEAD # unstage everything
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
+	excludesfile = ~/.gitignore_global
 [color]
 	ui = always
 [color "diff-highlight"]
