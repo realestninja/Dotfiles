@@ -45,6 +45,8 @@ nnoremap <S-Tab> :bprevious<CR>
 " join lines
 nnoremap gJ gJdw
 
+nnoremap Y y$
+
 " Toggle highlight search
 nnoremap <leader>hs :set hlsearch!<Enter>
 
