@@ -24,6 +24,7 @@
 	dl = diff HEAD~1..HEAD
 	ds = diff --staged
 	dsn = diff --staged --name-only
+    	fix = "!f() { vim -p `git diff --name-only | uniq`; }; f"
 	fo = fetch origin
 	fwl = push origin HEAD --force-with-lease
 	l = log
