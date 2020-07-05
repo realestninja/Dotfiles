@@ -38,6 +38,7 @@
 	rbs = rebase --skip
 	s = status
 	us = reset HEAD # unstage everything
+	setHead = reset --hard # <commit hash> as param. Example: git setHead 8ca4aab82b08a1977ca39dba5d1237846f02cd3c
 [core]
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	excludesfile = ~/.gitignore_global
