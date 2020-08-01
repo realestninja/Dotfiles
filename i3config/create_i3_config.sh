@@ -38,5 +38,10 @@ done
 
 # if [ "$MACHINE" == "WORK" ]
 # then
-	# cat $srcpath/work_related.i3.config >> $config
+	# cat $srcpath/machine_specific/work_related.i3.config >> $config
 # fi
+
+if [ "$MACHINE" == "X1" ]
+then
+	cat $srcpath/machine_specific/x1.i3.config >> $config
+fi
