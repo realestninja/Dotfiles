@@ -36,7 +36,7 @@ do
   cat "$srcpath/$filename.i3.config" >> $config
 done
 
-if [ "$MACHINE" == "WORK" ]
-then
-	cat $srcpath/work_related.i3.config >> $config
-fi
+# if [ "$MACHINE" == "WORK" ]
+# then
+	# cat $srcpath/work_related.i3.config >> $config
+# fi
