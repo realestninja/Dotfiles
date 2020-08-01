@@ -12,6 +12,7 @@ case $- in
 esac
 
 source ~/.profile
+source ~/.bash_machine
 
 use_color=true
 
