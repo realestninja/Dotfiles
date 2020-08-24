@@ -25,11 +25,17 @@ alias Code='cd ~/Code'
 alias cdc='cd $(ls -A1 | fzf)'
 
 alias g='git'
+
 alias update='sudo pacman -Syyu && yay -Syyu'
 
 alias toClipboard='xclip -selection clipboard'
 
 alias gpuVendor='glxinfo | grep "server glx vendor string"'
+
+function listAppsRam {
+	while true; do clear && ps aux | awk '{print $6/1024 " MB\t\t" $11}' | sort -n | tail; sleep 3; done
+	# watch -n 2 ps aux | awk '{print $6/1024 " MB\t\t" $11}' | sort -n | tail
+}
 
 function toPNG {
 	mogrify -format png $1
