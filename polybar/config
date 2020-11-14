@@ -42,7 +42,7 @@ base3 = #fdf6e3
 [bar/bar1]
 ;monitor = ${env:MONITOR:}
 width = 100%
-height = 45
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -63,7 +63,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 0
 ;font-0 = fixed:pixelsize=10;1
-font-0 = "MesloLGM Nerd Font:size=18:weight=regular;2"
+font-0 = "MesloLGM Nerd Font:size=14:weight=regular;2"
 ;font-0 = "FuraMono Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Inconsolata Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Fantasque Sans Mono:pixelsize=14;3"
@@ -74,13 +74,13 @@ font-2 = monospace:pixelsize=10;1
 
 modules-left = i3
 ;modules-center = player-mpris-tail
-modules-center = player-mpris-simple
+;modules-center = player-mpris-simple
 modules-right = temperature cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
 tray-padding = 2
-tray-maxsize = 70
+tray-maxsize = 30
 ;tray-transparent = true
 ;tray-background = #0063ff
 
