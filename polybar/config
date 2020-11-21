@@ -9,6 +9,9 @@
 ; Invisible character to append ->      
 ;=====================================================
 
+dpi-x = 144
+dpi-y = 144
+
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #073642
@@ -42,7 +45,7 @@ base3 = #fdf6e3
 [bar/bar1]
 ;monitor = ${env:MONITOR:}
 width = 100%
-height = 34
+height = 36
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -63,7 +66,7 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 0
 ;font-0 = fixed:pixelsize=10;1
-font-0 = "MesloLGM Nerd Font:size=16:weight=regular;2"
+font-0 = "MesloLGM Nerd Font:size=18:weight=regular;2"
 ;font-0 = "FuraMono Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Inconsolata Nerd Font:size=15:weight=regular;2"
 ;font-0 = "Fantasque Sans Mono:pixelsize=14;3"
@@ -389,3 +392,4 @@ ramp-volume-2 = 🔊
 ;ramp-volume-0 = Volume
 ;ramp-volume-1 = Volume
 ;ramp-volume-2 = Volume
+
