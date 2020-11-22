@@ -74,6 +74,7 @@ font-0 = "MesloLGM Nerd Font:size=18:weight=regular;2"
 font-1 = "MesloLGM Nerd Font:size=14;3"
 ;font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = monospace:pixelsize=10;1
+font-3 = Symbola:size=17;3
 
 modules-left = i3
 ;modules-center = player-mpris-tail
@@ -373,6 +374,7 @@ interval = 1
 click-left = playerctl play-pause
 click-middle= playerctl next
 click-right= playerctl previous
+
 [module/pulseaudio]
 type = internal/pulseaudio
 
@@ -387,12 +389,11 @@ use-ui-max = true
 ; Interval for volume increase/decrease (in percent points)
 ; Default: 5
 interval = 5
+
+label-muted = 🔇
+format-muted = <label-muted> 0%
+
 format-volume = <ramp-volume> <label-volume>
-label-muted = 
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
-;ramp-volume-0 = Volume
-;ramp-volume-1 = Volume
-;ramp-volume-2 = Volume
-
