@@ -10,7 +10,7 @@ packages used:
 launcher shortcuts set to:
 
 * `nautilus --no-desktop`
-* `google-chrome --force-device-scale-factor=1.4 %U`
+* `google-chrome
 * `/opt/telegram/Telegram`
 * `spotify -force-device-scale-factor=1.5`
 
