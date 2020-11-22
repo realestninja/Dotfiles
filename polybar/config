@@ -45,7 +45,7 @@ base3 = #fdf6e3
 [bar/bar1]
 ;monitor = ${env:MONITOR:}
 width = 100%
-height = 36
+height = 38
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -65,6 +65,7 @@ padding-right = 2
 
 module-margin-left = 1
 module-margin-right = 0
+
 ;font-0 = fixed:pixelsize=10;1
 font-0 = "MesloLGM Nerd Font:size=18:weight=regular;2"
 ;font-0 = "FuraMono Nerd Font:size=15:weight=regular;2"
@@ -125,7 +126,7 @@ interval = 25
 
 mount-0 = /
 
-label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
+label-mounted = %{F#0a81f5}%mountpoint%%{F-}:%percentage_used%%  
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -309,23 +310,28 @@ battery = BAT0
 adapter = ADP1
 full-at = 98
 
-format-charging    = <animation-charging> <label-charging>
-format-discharging = <ramp-capacity> <label-discharging> 
-format-full        = <ramp-capacity> <label-full>
+format-charging    = <animation-charging> <label-charging> 
 
+format-discharging = <ramp-capacity> <label-discharging> 
+label-charging-foreground = ${solarized.yellow}
+
+format-full        = <ramp-capacity> <label-full> 
+
+ramp-capacity-0-foreground = ${solarized.red}
 ramp-capacity-0 = 
 ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
 
-animation-charging-0 = " "
-animation-charging-1 = " "
-animation-charging-2 = " "
-animation-charging-3 = " "
-animation-charging-4 = " "
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-0-foreground = ${solarized.yellow}
+animation-charging-1-foreground = ${solarized.yellow}
+animation-charging-2-foreground = ${solarized.yellow}
 
-animation-charging-framerate = 400
+animation-charging-framerate = 800
 
 [module/temperature]
 type = internal/temperature
@@ -391,9 +397,9 @@ use-ui-max = true
 interval = 5
 
 label-muted = 🔇
-format-muted = <label-muted> 0%
+format-muted = <label-muted> 0% 
 
-format-volume = <ramp-volume> <label-volume>
+format-volume = <ramp-volume> <label-volume> 
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
