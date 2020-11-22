@@ -10,8 +10,3 @@ source ~/Dotfiles/vim/vim_config/indentation.vim
 if exists("g:loaded_webdevicons")
   call webdevicons#refresh()
 endif
-
-" Below for work pc. That machine is for little girls
-if system("uname") == "Darwin\n"
-	source $HOME/Dotfiles/vim/vim_config/.silly-macOS.vim
-endif
