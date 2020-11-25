@@ -13,7 +13,7 @@ font
 i3-gaps
 i3-colors
 polybar
-compton
+picom
 background-image
 keybindings
 reload_restart
