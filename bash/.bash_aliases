@@ -25,8 +25,7 @@ alias Code='cd ~/Code'
 alias cdc='cd $(ls -A1 | fzf)'
 
 alias g='git'
-
-alias update='sudo pacman -Syyu && yay -Syyu'
+alias update='yay -Syyu'
 
 alias toClipboard='xclip -selection clipboard'
 
