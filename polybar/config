@@ -9,9 +9,6 @@
 ; Invisible character to append ->      
 ;=====================================================
 
-dpi-x = 144
-dpi-y = 144
-
 [colors]
 ;background = ${xrdb:color0:#222}
 background = #073642
@@ -80,7 +77,7 @@ font-3 = Symbola:size=17;3
 modules-left = i3
 ;modules-center = player-mpris-tail
 ;modules-center = player-mpris-simple
-modules-right = temperature cpu memory filesystem battery pulseaudio date
+modules-right = cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
