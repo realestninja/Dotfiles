@@ -385,18 +385,18 @@ type = internal/pulseaudio
 ; If not, uses default sink
 sink = alsa_output.pci-0000_12_00.3.analog-stereo
 
-; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
-; Default: true
 use-ui-max = true
 
-; Interval for volume increase/decrease (in percent points)
-; Default: 5
 interval = 5
 
 label-muted = 🔇
-format-muted = <label-muted> 0% 
+label-muted-foreground = ${solarized.base01}
+format-muted = <label-muted>
 
 format-volume = <ramp-volume> <label-volume> 
 ramp-volume-0 = 🔈
 ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
+
+click-right = exec ~/Dotfiles/scriptcollection/music_script.sh
+click-middle = exec ~/Dotfiles/scriptcollection/music_script.sh
