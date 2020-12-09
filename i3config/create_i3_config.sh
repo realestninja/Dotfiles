@@ -25,6 +25,7 @@ spotify
 system_power_mode
 apps_and_boot
 manjaro_defaults
+floating_windows
 autolock
 )
 
