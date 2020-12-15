@@ -91,3 +91,8 @@ vnoremap <C-s> :sort<CR>
 " Change layout -> vertical/horizontal
 nnoremap <silent> <leader>lb <C-w>t<C-w>K<CR>
 nnoremap <silent> <leader>lv <C-w>t<C-w>H<CR>
+
+" REPL
+vnoremap <leader>rn :w !node<Enter>
+vnoremap <leader>rr :w !ruby<Enter>
+vnoremap <leader>rp :w !python<Enter>
