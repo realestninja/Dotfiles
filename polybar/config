@@ -399,4 +399,4 @@ ramp-volume-1 = 🔉
 ramp-volume-2 = 🔊
 
 click-right = exec ~/Dotfiles/scriptcollection/music_script.sh
-click-middle = exec ~/Dotfiles/scriptcollection/music_script.sh
+click-middle = exec playerctl next
