@@ -306,8 +306,10 @@ type = internal/battery
 battery = BAT0
 adapter = ADP1
 full-at = 98
+poll-interval = 5
 
 format-charging    = <animation-charging> <label-charging> 
+format-low = ${solarized.red}
 
 format-discharging = <ramp-capacity> <label-discharging> 
 label-charging-foreground = ${solarized.yellow}
