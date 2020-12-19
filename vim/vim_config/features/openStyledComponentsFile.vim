@@ -7,6 +7,17 @@ function OpenStyledComponentsFile()
 	let targetFile = stylesDir . targetFilename
   if filereadable(targetFile)
 		execute "split" targetFile
+	else
+		echo "Corresponding File not found\n"
+		echo "Create " . targetFile . " ?\n"
+		let l:prompt = input("y/N: ")
+		if l:prompt == "y" || "Y"
+			:silent call mkdir(stylesDir, "p", 0700)
+			:silent call writefile([], targetFile)
+			:NERDTreeRefreshRoot
+			execute "split" targetFile
+			:NERDTreeRefreshRoot
+		endif
   endif
 endfunction
 
