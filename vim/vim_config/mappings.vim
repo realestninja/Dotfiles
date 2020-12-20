@@ -6,6 +6,9 @@ imap jj <Esc>
 " Append ; at end of line
 nnoremap ; :execute "normal! mqA;\<lt>esc>`q"<enter>
 
+" record macro to q
+nnoremap Q qq
+
 " Close split but keep buffer
 nnoremap <Backspace> <C-w>q<Enter>
 
