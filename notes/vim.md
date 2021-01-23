@@ -1,20 +1,20 @@
 # vim
 
-## Command-line mode how-to's
-
-### Paste register content
+## Paste register content
 
 `<C-r><C-r>` allows pasting the content of a register.
 
 Example: `<C-r><C-r>q` -> pastes the content of register "q".
 
-### Edit content of a register
+## Edit content of a register
 
-`let @x="abc"` will place the string "abc" into register "x".
+`:let @x="abc"<Enter>` will place the string "abc" into register "x".
 
-Handy example: `:let @q="<C-r><C-r>q`
+Examples:
+* edit in command-line mode: `:let @q="<C-r><C-r>q{do edit}"<Enter>`
+* edit in buffer: `i<C-r><C-r>q{do edit}<Esc>"qdd`
 
-### Insert Special Character
+## Insert Special Character
 
 `<C-v>`
 
