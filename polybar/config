@@ -77,7 +77,7 @@ font-3 = Symbola:size=17;3
 modules-left = i3
 ;modules-center = player-mpris-tail
 ;modules-center = player-mpris-simple
-modules-right = cpu memory filesystem battery pulseaudio date
+modules-right = protonvpn cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
@@ -402,3 +402,8 @@ ramp-volume-2 = 🔊
 
 click-right = exec ~/Dotfiles/scriptcollection/music_script.sh
 click-middle = exec playerctl next
+
+[module/protonvpn]
+type = custom/script
+exec = ~/perm/polybar-protonvpn/polybar-protonvpn.sh
+interval = 5
