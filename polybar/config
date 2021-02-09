@@ -406,4 +406,5 @@ click-middle = exec playerctl next
 [module/protonvpn]
 type = custom/script
 exec = ~/perm/polybar-protonvpn/polybar-protonvpn.sh
+click-left= exec ~/perm/polybar-protonvpn/status-notification.sh
 interval = 5
