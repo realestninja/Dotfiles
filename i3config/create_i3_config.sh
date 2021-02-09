@@ -17,7 +17,6 @@ picom
 background-image
 keybindings
 reload_restart
-hidemouse
 scrolling
 screenshot
 media-hotkeys
