@@ -22,6 +22,10 @@ alias reload-bashrc='source ~/.bashrc'
 alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
 
+function pvpn {
+	sudo protonvpn $1
+}
+
 alias cdc='cd $(ls -A1 | fzf)'
 
 alias g='git'
