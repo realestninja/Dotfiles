@@ -6,7 +6,7 @@ function OpenStyledComponentsFile()
 	let targetFilename = expand('%:t:r') . ".styles.js"
 	let targetFile = stylesDir . targetFilename
   if filereadable(targetFile)
-		execute "split" targetFile
+		execute "vsplit" targetFile
 	else
 		echo "Corresponding File not found\n"
 		echo "Create " . targetFile . " ?\n"
