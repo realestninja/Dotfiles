@@ -21,10 +21,7 @@ alias open='xdg-open'
 alias reload-bashrc='source ~/.bashrc'
 alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
-
-function pvpn {
-	sudo protonvpn $1
-}
+alias kittyssh="kitty +kitten ssh"
 
 alias cdc='cd $(ls -A1 | fzf)'
 
@@ -34,6 +31,10 @@ alias update='yay -Syyu'
 alias toClipboard='xclip -selection clipboard'
 
 alias gpuVendor='glxinfo | grep "server glx vendor string"'
+
+function pvpn {
+	sudo protonvpn $1
+}
 
 function listAppsRam {
 	while true; do clear && ps aux | awk '{print $6/1024 " MB\t\t" $11}' | sort -n | tail; sleep 3; done
