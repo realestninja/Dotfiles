@@ -21,6 +21,7 @@ alias open='xdg-open'
 alias reload-bashrc='source ~/.bashrc'
 alias Dotfiles='cd ~/Dotfiles'
 alias Code='cd ~/Code'
+alias Blog='cd ~/Code/static-blog'
 alias kittyssh="kitty +kitten ssh"
 
 alias cdc='cd $(ls -A1 | fzf)'
