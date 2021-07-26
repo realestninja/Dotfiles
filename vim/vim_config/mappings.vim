@@ -22,9 +22,10 @@ nnoremap _ kddpk
 " insert empty line above
 nnoremap <leader>- o<Esc>jkk
 
-nnoremap <leader>w :w<Enter>
 nnoremap <Enter> :w<Enter>
 nnoremap <leader><Enter> :w !sudo tee %<Enter>
+" Keep default CR behaviour for quickfix list
+autocmd BufReadPost quickfix nnoremap <buffer> <CR> <CR>
 
 "nnoremap <leader>q :q<Enter>
 nnoremap <leader>q :bw<Enter>
