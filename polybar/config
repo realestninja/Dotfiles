@@ -75,8 +75,7 @@ font-2 = monospace:pixelsize=10;1
 font-3 = Symbola:size=17;3
 
 modules-left = i3
-;modules-center = player-mpris-tail
-;modules-center = player-mpris-simple
+modules-center = player-mpris-simple
 modules-right = protonvpn cpu memory filesystem battery pulseaudio date
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
@@ -374,7 +373,7 @@ margin-bottom = 5
 
 [module/player-mpris-simple]
 type = custom/script
-exec = ~/Dotfiles/polybar/modules/player-mpris-simple/player-mpris-simple.sh
+exec = ~/Dotfiles/polybar/modules/player-mpris-simple.sh
 interval = 1
 click-left = playerctl play-pause
 click-middle= playerctl next
