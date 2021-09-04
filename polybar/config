@@ -76,7 +76,7 @@ font-3 = Symbola:size=17;3
 
 modules-left = i3
 modules-center = player-mpris-simple
-modules-right = protonvpn cpu memory filesystem battery pulseaudio date
+modules-right = protonvpn cpu memory filesystem battery pulseaudio date updates-pacman-aurhelper
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
@@ -407,3 +407,8 @@ type = custom/script
 exec = ~/perm/polybar-protonvpn/polybar-protonvpn.sh
 click-left= exec ~/perm/polybar-protonvpn/status-notification.sh
 interval = 5
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/Dotfiles/polybar/modules/updates-pacman-aurhelper.sh
+interval = 600
