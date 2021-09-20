@@ -363,14 +363,6 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-;[module/player-mpris-tail]
-;type = custom/script
-;exec = ~/Dotfiles/polybar/modules/player-mpris-tail/player-mpris-tail.py
-;tail = true
-;click-left = playerctl play-pause
-;click-middle= playerctl next
-;click-right= playerctl previous
-
 [module/player-mpris-simple]
 type = custom/script
 exec = ~/Dotfiles/polybar/modules/player-mpris-simple.sh
