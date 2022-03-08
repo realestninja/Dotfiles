@@ -29,7 +29,6 @@
 	fwl = push origin HEAD --force-with-lease
 	l = log
 	ll = log --color --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an> %Cgreen(%cr)%Creset%C(yellow)%d%Creset %s ' --abbrev-commit
-	lb = "!f() { git branch --sort=-committerdate | head -10; }; f"
 	ps = push origin HEAD
 	pst = push --tags
 	pl = pull --rebase
@@ -38,6 +37,7 @@
 	rbc = rebase --continue
 	rbs = rebase --skip
 	s = status
+	srb = "!f() { git branch --sort=-committerdate | head -10; }; f"
 	us = reset HEAD # unstage everything
 	setHead = reset --hard # <commit hash> as param. Example: git setHead 8ca4aab82b08a1977ca39dba5d1237846f02cd3c
 [core]
