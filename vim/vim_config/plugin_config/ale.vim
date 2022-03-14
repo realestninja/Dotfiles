@@ -1,5 +1,8 @@
 let g:ale_linters = {'javascript': ['eslint'], 'javascript.jsx': ['eslint', 'stylelint'], 'sass': ['sasslint'], 'typescript': ['tslint']}
 
+" workaround to make stylelint work -> https://github.com/dense-analysis/ale/issues/330#issuecomment-279158146
+let g:ale_linter_aliases = {'jsx': 'css'}
+
 let g:ale_lint_on_text_changed = 1
 let g:ale_lint_delay = 300
 let g:ale_sign_column_always = 1
