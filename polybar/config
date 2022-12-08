@@ -370,6 +370,7 @@ interval = 1
 click-left = playerctl play-pause
 click-middle= playerctl next
 click-right= playerctl previous
+label-maxlen = 80
 
 [module/pulseaudio]
 type = internal/pulseaudio
