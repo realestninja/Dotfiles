@@ -367,9 +367,9 @@ margin-bottom = 5
 type = custom/script
 exec = ~/Dotfiles/polybar/modules/player-mpris-simple.sh
 interval = 1
-click-left = playerctl play-pause
-click-middle= playerctl next
-click-right= playerctl previous
+click-left = playerctl -p spotify play-pause
+click-middle= playerctl -p spotify next
+click-right= playerctl -p spotify previous
 label-maxlen = 80
 
 [module/pulseaudio]
