@@ -76,7 +76,7 @@ font-3 = Symbola:size=17;3
 
 modules-left = i3
 modules-center = player-mpris-simple
-modules-right = protonvpn cpu memory filesystem battery pulseaudio date updates-pacman-aurhelper
+modules-right = cpu memory filesystem battery pulseaudio date updates-pacman-aurhelper
 ;modules-right = filesystem memory cpu wlan eth battery temperature date
 
 tray-position = right
