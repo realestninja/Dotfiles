@@ -57,10 +57,13 @@ $bindsym XF86TouchpadToggle input type:touchpad events toggle enabled disabled
 #
 # Move your focus around
 ## Navigation // Move focus // $mod + ↑ ↓ ← → ##
-$bindsym $mod+$left focus left
+# $bindsym $mod+$left focus left
 $bindsym $mod+$down focus down
 $bindsym $mod+$up focus up
-$bindsym $mod+$right focus right
+# $bindsym $mod+$right focus right
+
+$bindsym $mod+$left workspace prev
+$bindsym $mod+$right workspace next
 
 $bindsym $mod+$left_alt focus left
 $bindsym $mod+$down_alt focus down
