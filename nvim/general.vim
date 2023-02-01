@@ -50,3 +50,8 @@ endfunction
 
 " Remove underline from linenumber
 hi CursorLineNr  cterm=none
+
+" setup for bufferline
+lua << EOF
+require("bufferline").setup{}
+EOF

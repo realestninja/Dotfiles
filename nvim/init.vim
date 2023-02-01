@@ -26,7 +26,9 @@ Plugin 'mattn/emmet-vim'
 Plugin 'realestninja/vim-printer'
 Plugin 'danielwe/base16-vim'
 Plugin 'junegunn/goyo.vim'
+
 Plugin 'ryanoasis/vim-devicons'
+Plugin 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 " snippets
 Plugin 'SirVer/ultisnips'
