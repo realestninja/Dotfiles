@@ -2,6 +2,7 @@
 *.swo
 */.git
 tags
+bundle
 
 fonts/.uuid
 
