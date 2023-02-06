@@ -1,0 +1,6 @@
+" lua require("ghrepo")
+lua require("plugins")
+" lua require("lsp_setup")
+lua require("lualine_config")
+lua require("mappings")
+lua require("general_settings")
