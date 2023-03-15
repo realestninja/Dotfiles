@@ -1,0 +1,8 @@
+profile home {
+  output HDMI-A-1 scale 2
+  output eDP-1 disable
+}
+
+profile default {
+	output eDP-1 enable position 0,0
+}
