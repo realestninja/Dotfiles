@@ -71,10 +71,10 @@ $bindsym $mod+$up_alt focus up
 $bindsym $mod+$right_alt focus right
 
 ## Navigation // Move focused window // $mod + Shift + ↑ ↓ ← → ##
-$bindsym $mod+Shift+$left move left
-$bindsym $mod+Shift+$down move down
-$bindsym $mod+Shift+$up move up
-$bindsym $mod+Shift+$right move right
+$bindsym $mod+Shift+$left move workspace to output left
+$bindsym $mod+Shift+$down move workspace to output down
+$bindsym $mod+Shift+$up move workspace to output up
+$bindsym $mod+Shift+$right move workspace to output right
 
 $bindsym $mod+Shift+$left_alt move left
 $bindsym $mod+Shift+$down_alt move down
