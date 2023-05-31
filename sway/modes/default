@@ -25,7 +25,7 @@ floating_modifier $mod normal
 ## Action // Reload Sway Configuration ##
 $bindsym $mod+Shift+c reload
 
-## Action // Toggle Waybar ##    
+## Action // Toggle Waybar ##
 $bindsym $mod+Shift+b exec pkill -SIGUSR1 waybar
 
 # --locked flags allow the buttons to be used whilst the screen is locked.
