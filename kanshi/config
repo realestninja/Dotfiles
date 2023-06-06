@@ -8,6 +8,11 @@ profile home_docking {
   output eDP-1 disable
 }
 
+profile home_docking2 {
+  output DP-6 scale 1.8
+  output eDP-1 disable
+}
+
 profile cuvry_lightning_back {
   output DP-3 scale 1.6
   output eDP-1 disable
