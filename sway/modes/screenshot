@@ -16,5 +16,8 @@ mode --pango_markup $mode_screenshot {
     $bindsym Escape mode "default"
 }
 
+set $grim exec grim $HOME/Screenshots/grim-$(date +'%Y%m%d_%H%M%S').png
+
 ## Launch // Screenshot Mode ##
 $bindsym Print mode $mode_screenshot
+$bindsym $mod+Print exec $grim
