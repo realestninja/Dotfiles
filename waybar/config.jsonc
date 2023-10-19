@@ -29,9 +29,7 @@
         // informational
         "custom/weather",
         "sway/language",
-        "custom/github",
         "custom/clipboard",
-        "custom/zeit",
         "cpu",
         "temperature",
         "memory",
@@ -42,7 +40,6 @@
         "bluetooth",
 
         // media
-        "custom/playerctl",
         "idle_inhibitor",
         "custom/dnd",
         "pulseaudio",
@@ -241,17 +238,7 @@
         "signal": 8
     },
 
-    "custom/github": {
-        "interval": 300,
-        "tooltip": false,
-        "return-type": "json",
-        "format": " {}",
-        "exec": "gh api '/notifications' -q '{ text: length }' | cat -",
-        "exec-if": "[ -x \"$(command -v gh)\" ] && gh auth status 2>&1 | grep -q -m 1 'Logged in' && test $(gh api '/notifications' -q 'length') -ne 0",
-        "on-click": "xdg-open https://github.com/notifications && sleep 30 && pkill -RTMIN+4 waybar",
-        "signal": 4
-    },
-
+    // currently not used
     "custom/playerctl": {
         "interval": "once",
         "tooltip": true,
@@ -319,20 +306,6 @@
       "on-click": "playerctl play-pause",
       "on-click-right": "playerctl next",
       "on-click-middle": "playerctl previous"
-    },
-
-    "custom/zeit": {
-        "return-type": "json",
-        "interval": "once",
-        "format": "{icon}",
-        "format-icons": {
-            "tracking": "󰖷",
-            "stopped": "󰋣"
-        },
-        "exec": "/bin/sh /usr/share/sway/scripts/zeit.sh status",
-        "on-click": "/bin/sh /usr/share/sway/scripts/zeit.sh click; pkill -RTMIN+10 waybar",
-        "exec-if": "[ -x \"$(command -v zeit)\" ]",
-        "signal": 10
     },
 
     "custom/dnd": {
