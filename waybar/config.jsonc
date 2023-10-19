@@ -80,7 +80,7 @@
 
     "cpu": {
         "interval": 10,
-        "format": "󰘚",
+        "format": "󰘚 {usage}%",
         "states": {
             "warning": 70,
             "critical": 90
@@ -91,7 +91,7 @@
 
     "memory": {
         "interval": 10,
-        "format": "󰍛",
+        "format": "󰍛 {}%",
         "states": {
             "warning": 70,
             "critical": 90
@@ -157,7 +157,7 @@
     "temperature": {
         "critical-threshold": 90,
         "interval": 5,
-        "format": "{icon}",
+        "format": "{icon} {temperatureC}°C",
         "tooltip-format": "{temperatureC}°C",
         "format-icons": ["", "", ""],
         "tooltip": true,
