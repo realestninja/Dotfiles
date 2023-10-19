@@ -21,6 +21,8 @@
  	cof = "!f() { git checkout $(git branch --no-color | fzf); }; f"
 	cc = checkout -- .
 	cnt = rev-list --count	# example: git rev-list --count master..HEAD
+  cleann = clean -n
+  cleanf = clean -f
 	d = diff
 	dl = diff HEAD~1..HEAD
 	ds = diff --staged
