@@ -31,8 +31,8 @@
         "sway/language",
         "custom/clipboard",
         "cpu",
-        "temperature",
         "memory",
+        "temperature",
         "battery",
 
         // connecting
