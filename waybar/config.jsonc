@@ -24,10 +24,10 @@
       "custom/wf-recorder",
       "sway/mode"
     ],
-    "modules-center": ["custom/spotify"],
+    "modules-center": ["custom/weather"],
     "modules-right": [
+        "custom/playerctl",
         // informational
-        "custom/weather",
         "sway/language",
         "custom/clipboard",
         "cpu",
@@ -238,15 +238,14 @@
         "signal": 8
     },
 
-    // currently not used
     "custom/playerctl": {
         "interval": "once",
         "tooltip": true,
         "return-type": "json",
         "format": "{icon}",
         "format-icons": {
-            "Playing": "󰏦",
-            "Paused": "󰐍"
+            "Playing": "󰐍",
+            "Paused": "󰏦"
         },
         "exec": "playerctl metadata --format '{\"alt\": \"{{status}}\", \"tooltip\": \"{{playerName}}:  {{markup_escape(title)}} - {{markup_escape(artist)}}\" }'",
         "on-click": "playerctl play-pause; pkill -RTMIN+5 waybar",
@@ -299,6 +298,7 @@
         }
     },
 
+    // curently not in use
     "custom/spotify": {
       "exec": "/usr/bin/python3 /home/nikhil/Dotfiles/waybar/custom_modules/mediaplayer.py --player spotify",
       "format": "{} ",
