@@ -20,11 +20,13 @@
     "modules-left": [
       "custom/menu",
       "sway/workspaces",
-      "custom/scratchpad",
-      "custom/wf-recorder",
-      "sway/mode"
+      "custom/scratchpad"
     ],
-    "modules-center": ["custom/weather"],
+    "modules-center": [
+      "custom/wf-recorder",
+      "sway/mode",
+      "custom/weather"
+    ],
     "modules-right": [
         "custom/playerctl",
         // informational
