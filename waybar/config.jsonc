@@ -28,32 +28,32 @@
       "custom/weather"
     ],
     "modules-right": [
-        "custom/playerctl",
-        // informational
-        "sway/language",
-        "custom/clipboard",
-        "cpu",
-        "memory",
-        "temperature",
-        "battery",
+      "custom/playerctl",
+      // informational
+      "sway/language",
+      "custom/clipboard",
+      "cpu",
+      "memory",
+      "temperature",
+      "battery",
 
-        // connecting
-        "network",
-        "bluetooth",
+      // connecting
+      "network",
+      "bluetooth",
 
-        // media
-        "idle_inhibitor",
-        "custom/dnd",
-        "pulseaudio",
-        "backlight",
+      // media
+      "idle_inhibitor",
+      "custom/dnd",
+      "pulseaudio",
+      "backlight",
 
-        // system
-        "custom/adaptive-light",
-        "custom/sunset",
-        "custom/pacman",
+      // system
+      "custom/adaptive-light",
+      "custom/sunset",
+      "custom/pacman",
 
-        "tray",
-        "clock"
+      "tray",
+      "clock"
     ],
 
     // -------------------------------------------------------------------------
