@@ -38,6 +38,7 @@
       "battery",
 
       // connecting
+      "custom/wireguard",
       "network",
       "bluetooth",
 
@@ -337,5 +338,14 @@
         "on-click": "/usr/share/sway/scripts/wluma.sh toggle; pkill -RTMIN+12 waybar",
         "exec-if": "/usr/share/sway/scripts/wluma.sh check",
         "signal": 12
+    },
+
+    "custom/wireguard": {
+        "format": "{}",
+        "exec": "~/Dotfiles/waybar/custom_modules/wireguard-rofi-waybar/wireguard.sh short",
+        // "on-click": "rofi -modi 'WireGuard:~/Dotfiles/waybar/custom_modules/wireguard-rofi-waybar/wireguard-rofi.sh' -show WireGuard -theme mytheme; pkill -SIGRTMIN+6 waybar",
+        "signal": 6,
+        "interval": 60,
+        "return-type": "json"
     }
 }
