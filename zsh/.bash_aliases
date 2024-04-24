@@ -50,3 +50,12 @@ function toJPG {
 function historyGrep {
 	history | grep $1
 }
+
+# search and replace, project-wide
+function sarpw {
+  echo 'Old: ' $1
+  echo 'New: ' $2
+  echo 'Renaming...'
+  find . -not -path "./.git/*" -not -path "./node_modules/*" -type f -exec sed -i 's/'$1'/'$2'/g' {} \;
+  echo "Done!"
+}
