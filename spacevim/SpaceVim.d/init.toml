@@ -18,7 +18,7 @@
     enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
-    statusline_separator = "nil"
+    statusline_separator = "arrow"
     statusline_iseparator = "bar"
     buffer_index_type = 4
     windows_index_type = 3
