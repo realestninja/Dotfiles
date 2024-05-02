@@ -28,7 +28,7 @@
       "custom/weather"
     ],
     "modules-right": [
-      "custom/playerctl",
+      // "custom/playerctl",
       // informational
       "sway/language",
       "custom/clipboard",
