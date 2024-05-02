@@ -27,8 +27,8 @@
 	dl = diff HEAD~1..HEAD
 	ds = diff --staged
 	dsn = diff --staged --name-only
-    	f = "!f() { nvim -p `git diff --name-only | uniq`; }; f"
 	fo = fetch origin
+  f = "!f() { nvim -p `git diff --name-only | uniq`; }; f"
 	fwl = push origin HEAD --force-with-lease
 	l = log
 	ll = log --color --graph --pretty=format:'%Cred%h%Creset %C(bold blue)<%an> %Cgreen(%cr)%Creset%C(yellow)%d%Creset %s ' --abbrev-commit
