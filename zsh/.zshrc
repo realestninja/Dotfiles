@@ -71,3 +71,6 @@ export PATH=/home/nikhil/.cargo/bin:$PATH
 
 # ruby
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# nvm
+source /usr/share/nvm/init-nvm.sh
