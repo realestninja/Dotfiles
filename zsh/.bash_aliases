@@ -15,6 +15,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias notes='cd ~/Documents/ObsidianVault/'
 alias r='ranger'
 alias R='ranger'
 alias p='ping 9.9.9.9'
