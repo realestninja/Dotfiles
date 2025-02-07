@@ -24,11 +24,28 @@ vim.g.maplocalleader = "\\"
 require("lazy").setup({
   spec = {
     -- import your plugins
-    { import = "plugins/solarized" },
+    { import = 'plugins/solarized' },
+    { 'williamboman/mason.nvim' },
+    -- { import = "plugins/chatjibbidy" },
+    { 'numToStr/Comment.nvim' },
+
+    -- Tree
+    { 'ryanoasis/vim-devicons' },
+    { 'preservim/nerdtree' },
+
+    -- status lines
+    { 'akinsho/bufferline.nvim' },
+    { 'nvim-lualine/lualine.nvim' },
+
+    -- telescope
+    { 'nvim-telescope/telescope.nvim' },
+    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
+    { 'kelly-lin/telescope-ag', requires = { { 'nvim-telescope/telescope.nvim' } } },
+    { 'smartpde/telescope-recent-files' },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
-  install = { colorscheme = { "habamax" } },
+  install = { colorscheme = { 'solarized_dark' } },
   -- automatically check for plugin updates
   checker = { enabled = true },
 })
