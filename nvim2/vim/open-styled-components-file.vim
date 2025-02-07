@@ -5,7 +5,7 @@ function OpenStyledComponentsFile()
 	let stylesDir = expand('%:p:h') . "/styles/"
 	let targetFilename = expand('%:t:r') . ".styles.js"
 	let targetFile = stylesDir . targetFilename
-  if filereadable(targetFile)
+  	if filereadable(targetFile)
 		execute "vsplit" targetFile
 	else
 		echo "Corresponding File not found\n"
@@ -18,7 +18,7 @@ function OpenStyledComponentsFile()
 			execute "vsplit" targetFile
 			:NERDTreeRefreshRoot
 		endif
-  endif
+  	endif
 endfunction
 
 nnoremap <leader>osc :call OpenStyledComponentsFile()<Enter>
