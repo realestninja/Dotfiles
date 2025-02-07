@@ -12,7 +12,7 @@ require 'user.nerdtree'
 require 'user.windowswap'
 require 'user.comment'
 
-vim.cmd('source '..vim.fn.expand('%:p:h')..'/nvim/vim/open-styled-components-file.vim')
-vim.cmd('source '..vim.fn.expand('%:p:h')..'/nvim/vim/close-inactive-bufs.vim')
-vim.cmd('source '..vim.fn.expand('%:p:h')..'/nvim/vim/zoom.vim')
-vim.cmd('source '..vim.fn.expand('%:p:h')..'/nvim/vim/mappings.vim')
+vim.cmd('source ~/.config/nvim/vim/open-styled-components-file.vim')
+vim.cmd('source ~/.config/nvim/vim/close-inactive-bufs.vim')
+vim.cmd('source ~/.config/nvim/vim/zoom.vim')
+vim.cmd('source ~/.config/nvim/vim/mappings.vim')
