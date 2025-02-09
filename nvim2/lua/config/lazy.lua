@@ -23,12 +23,24 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    -- import your plugins
+    -- General
+    { 'nvim-lua/plenary.nvim' },
     { import = 'plugins/solarized' },
+    { import = 'plugins/hop' },
+    { 'lukas-reineke/indent-blankline.nvim', commit = "db7cbcb40cc00fc5d6074d7569fb37197705e7f6" },
+    { 'RRethy/vim-illuminate' },
 
-    -- cmp
+    -- Cmp
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
+
+    -- Cmp plugins
+    { 'hrsh7th/nvim-cmp' },
+    { 'hrsh7th/cmp-buffer' },
+    { 'hrsh7th/cmp-path' },
+    { 'saadparwaiz1/cmp_luasnip' },
+    { 'hrsh7th/cmp-nvim-lsp' },
+    { 'hrsh7th/cmp-nvim-lua' },
 
     -- Treesitter
     { 'nvim-treesitter/nvim-treesitter' },
@@ -40,13 +52,13 @@ require("lazy").setup({
 
     -- { import = "plugins/chatjibbidy" },
     -- { 'numToStr/Comment.nvim' },
-    -- { "windwp/nvim-autopairs", commit = "4fc96c8f3df89b6d23e5092d31c866c53a346347" }, -- Autopairs, integrates with both cmp and treesitter
+    { "windwp/nvim-autopairs" }, -- Autopairs, integrates with both cmp and treesitter
 
     -- Git
     { 'lewis6991/gitsigns.nvim', commit = 'f98c85e7c3d65a51f45863a34feb4849c82f240f' },
     { 'tpope/vim-fugitive' },
 
-    -- oldschool vim / general utilities
+    -- Oldschool Vim / general utilities
     { "realestninja/nerdcommenter" },
     { "realestninja/vim-printer" },
     { 'simeji/winresizer' },
@@ -62,19 +74,15 @@ require("lazy").setup({
     { 'akinsho/bufferline.nvim' },
     { 'nvim-lualine/lualine.nvim' },
 
-    -- cmp plugins
-    { 'hrsh7th/nvim-cmp' },
-    { 'hrsh7th/cmp-buffer' },
-    { 'hrsh7th/cmp-path' },
-    { 'saadparwaiz1/cmp_luasnip' },
-    { 'hrsh7th/cmp-nvim-lsp' },
-    { 'hrsh7th/cmp-nvim-lua' },
-
-    -- telescope
+    -- Telescope
     { 'nvim-telescope/telescope.nvim' },
     { import = 'plugins/telescope_fzf_native' },
     { import = 'plugins/telescope_ag' },
     { 'smartpde/telescope-recent-files' },
+
+    -- Snippet
+    { 'L3MON4D3/LuaSnip' },
+    { 'rafamadriz/friendly-snippets' },
   },
 
   -- Configure any other settings here. See the documentation for more details.

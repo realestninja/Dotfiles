@@ -15,6 +15,9 @@ require 'user.comment'
 require "user.expand-region"
 require "user.nerdcommenter"
 require "user.autopairs"
+require "user.indentline"
+require "user.hop"
+require "user.luasnip"
 
 vim.cmd('source ~/.config/nvim/vim/open-styled-components-file.vim')
 vim.cmd('source ~/.config/nvim/vim/close-inactive-bufs.vim')
