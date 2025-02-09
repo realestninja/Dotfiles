@@ -18,6 +18,7 @@ require "user.autopairs"
 require "user.indentline"
 require "user.hop"
 require "user.luasnip"
+require "user.basic-settings"
 
 vim.cmd('source ~/.config/nvim/vim/open-styled-components-file.vim')
 vim.cmd('source ~/.config/nvim/vim/close-inactive-bufs.vim')
