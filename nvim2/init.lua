@@ -1,7 +1,9 @@
-require 'user.telescope'
 require 'user.keymaps'
 
 require 'config.lazy'
+
+require 'user.telescope'
+
 require('mason').setup()
 
 -- require "user.gitsigns"

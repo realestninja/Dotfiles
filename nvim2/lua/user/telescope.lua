@@ -1,8 +1,4 @@
-local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then
-  return
-end
-
+local telescope = require("telescope")
 local actions = require "telescope.actions"
 
 -- select_one_or_multi solution was found here:
@@ -31,6 +27,7 @@ telescope.setup {
 
     mappings = {
       i = {
+        ["<C-h>"] = "which_key",
         ["<Down>"] = actions.cycle_history_next,
         ["<Up>"] = actions.cycle_history_prev,
         ["<C-j>"] = actions.move_selection_next,
@@ -50,6 +47,6 @@ telescope.setup {
   }
 }
 
-telescope.load_extension("fzf")
-telescope.load_extension("ag")
-telescope.load_extension("recent_files")
+-- telescope.load_extension("fzf")
+-- telescope.load_extension("ag")
+-- telescope.load_extension("recent_files")
