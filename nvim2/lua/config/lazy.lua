@@ -59,7 +59,6 @@ require("lazy").setup({
     -- Oldschool Vim / general utilities
     { 'realestninja/nerdcommenter' },
     { 'realestninja/vim-printer' },
-    { 'simeji/winresizer', commit = '9bd559a03ccec98a458e60c705547119eb5350f3' },
     { 'wesQ3/vim-windowswap', commit = '15db3f697aa1fa696d99fcdc920c90cd2cec855e' },
     { 'terryma/vim-expand-region', commit = '966513543de0ddc2d673b5528a056269e7917276' },
     { 'tpope/vim-surround', commit = '3d188ed2113431cf8dac77be61b842acb64433d9' },
