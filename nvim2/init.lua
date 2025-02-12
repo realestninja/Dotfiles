@@ -4,8 +4,6 @@ require 'config.lazy'
 
 require 'user.telescope'
 
-require('mason').setup()
-
 -- require "user.gitsigns"
 require 'user.lualine'
 require 'user.solarized'
@@ -22,6 +20,9 @@ require "user.basic-settings"
 require 'user.bufferline'
 require 'user.treesitter'
 require 'user.winresizer'
+require "user.cmp"
+
+require 'user.lsp.lsp-config'
 
 vim.cmd('source ~/.config/nvim/vim/open-styled-components-file.vim')
 vim.cmd('source ~/.config/nvim/vim/close-inactive-bufs.vim')

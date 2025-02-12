@@ -30,7 +30,8 @@ require("lazy").setup({
     { 'lukas-reineke/indent-blankline.nvim', commit = 'db7cbcb40cc00fc5d6074d7569fb37197705e7f6' },
     { 'RRethy/vim-illuminate', commit = 'b5713e6ca3f627b46968386d6d3f24d374d3cb17' },
 
-    -- Cmp
+    -- LSP
+    { 'neovim/nvim-lspconfig', commit = '6c17f8656f667727b27f5f598463afedb7791b18' },
     { 'williamboman/mason.nvim', commit = 'e2f7f9044ec30067bc11800a9e266664b88cda22' },
     { 'williamboman/mason-lspconfig.nvim', commit = 'f75e877f5266e87523eb5a18fcde2081820d087b' },
 
