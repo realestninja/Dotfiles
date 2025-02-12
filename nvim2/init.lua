@@ -20,6 +20,7 @@ require "user.hop"
 require "user.luasnip"
 require "user.basic-settings"
 require 'user.bufferline'
+require 'user.treesitter'
 require 'user.winresizer'
 
 vim.cmd('source ~/.config/nvim/vim/open-styled-components-file.vim')
