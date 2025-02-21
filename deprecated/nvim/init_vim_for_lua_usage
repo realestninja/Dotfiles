@@ -1,3 +1,0 @@
-lua require("plugins")
-lua require("lualine_config")
-lua require("general_settings")

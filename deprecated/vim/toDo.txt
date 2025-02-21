@@ -1,3 +1,0 @@
-function to check if highlight search is active.
-yes -> disable hs
-no -> activate and search for current word
